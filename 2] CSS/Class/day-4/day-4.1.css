@@ -1,0 +1,45 @@
+.static {
+    position: static;
+    border: 1px solid green;
+    left: 20px;
+
+}
+
+.relative {
+    position: relative;
+    border: 1px solid red;
+    left: 20px;
+    height: 200px;
+    width: 300px;
+}
+
+.child {
+    position: absolute;
+    border: 1px solid yellow;
+    padding: 20px;
+    left: 20px;
+    top: 120px;
+}
+
+.abs {
+    position: absolute;
+    margin-bottom: 50px;
+}
+
+.position-fixed-css {
+    position: fixed;
+    height: 300px;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    bottom: 0;
+    right: 0;
+}
+.sticky {
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}

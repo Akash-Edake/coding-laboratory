@@ -1,0 +1,142 @@
+body {
+    /* background-color: tomato; */
+}
+.h1-test {
+    color: #fff;
+}
+form, ul, li, div,h1{
+    color: #000;
+}
+/* ul {
+    color: #fff;
+}
+li {
+    color: #fff;
+}
+h1 {
+    color: #fff;
+}
+div {
+    color: #fff;
+} */
+#h1_id {
+    color: green;
+}
+
+.hover-test:hover {
+    background-color: blue;
+}
+/* 
+un visited links
+*/
+a:link {
+    color: yellow;
+}
+/* visited */
+a:visited {
+    color: green;
+}
+/* active link */
+a:active {
+    color: violet;
+}
+
+/* 
+no space bet class name
+camel case
+- 
+_
+
+*/
+
+.hover-test:hover {
+    background-color: blue;
+}
+/* 
+un visited links
+*/
+a:link {
+    color: yellow;
+}
+/* visited */
+a:visited {
+    color: green;
+}
+/* active link */
+a:active {
+    color: violet;
+}
+
+.al-test p:first-child{
+    background-color: pink;
+}
+.al-test p:last-child {
+    background-color: purple;
+}
+.al-test p:nth-child(4){
+    background-color: red;
+}
+.al-test p:nth-child(odd){
+    background-color: blue;
+}
+.al-test p:nth-child(even){
+    background-color: green;
+}
+
+
+
+
+/* selector:pseudo-class {
+    property:value
+    /* 
+    hover
+    active
+    link
+    visited
+    checked
+    first-child
+    last-child
+    nth-child()
+    
+  
+} */
+
+/* Pseudo element  */
+/* 
+selector::pseudo-element {
+    property:value
+} */
+
+.cts-css p::first-letter {
+    font-size: 40px;
+}
+.cts-css .test-p::first-line {
+    background-color: red;
+}
+.cts-css h1::after{
+    content: " - CTS LLP";
+}
+.cts-css h1::before{
+    content: " - CTS LLP";
+}
+/* .cts-css h1::before{
+    content: url('../../4.jpg');
+} */
+.d-none-test p {
+    display: none;
+}
+.d-none-test:hover p{
+display: block;
+background-color: yellow;
+}
+
+/* 
+Attribute selector
+*/
+/* selector[attribute="value"]{
+
+} */
+
+a[target]{
+    background-color: red;
+}

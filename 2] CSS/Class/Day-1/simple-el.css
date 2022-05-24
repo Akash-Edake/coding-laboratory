@@ -1,0 +1,53 @@
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+/*======== simple element Syntax ========= */
+
+
+/*=================
+  selector{ 
+      property:value;
+    } 
+  ==================  */
+
+
+/*====================
+      . => class
+      # => id
+======================  */
+
+body{
+  background-color: tomato;
+}
+
+
+p {
+  color: aquamarine;
+  
+}
+p.color{
+  color: red;
+  
+}
+#rang{
+  color: blue;
+}
+
+
+.a1, .a2{
+  color: chartreuse;
+}
+#a1, #a2{
+  color: deeppink;
+}
+
+
+ div.color{
+  color: aqua;
+}
+div#cl{
+  color: darkgoldenrod;
+}

@@ -1,0 +1,28 @@
+/* =======================
+
+selector::pseudo-element{
+    property:value;
+}
+ =========================*/
+
+ 
+ p::first-letter{
+     font-style: italic;
+ }
+ div::first-line{
+     color: aqua;
+ }
+ 
+ ul li::marker{
+     color: rgb(34, 214, 103);
+ }
+
+ h2::after{
+     content: " after";
+     color: brown;
+ }
+
+ .el2::before{
+     content: "before ";
+     color: aqua;
+ }

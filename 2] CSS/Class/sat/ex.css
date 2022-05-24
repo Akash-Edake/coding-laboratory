@@ -1,0 +1,17 @@
+body{
+    background-image: url(bgi.jpg);
+}
+
+p{
+    display: flex;
+    backdrop-filter: blur(7px);
+    width: 280px;
+    height: 400px;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 30px;
+    padding: 20px;
+     border: 1px solid;
+     border-radius: 5px;
+
+}

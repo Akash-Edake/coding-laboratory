@@ -1,0 +1,52 @@
+body{
+    background-color: cornflowerblue !important;
+}
+
+
+/* ================== start => no.1 ====================================*/
+p{
+    color: aqua;
+    background-color: blue;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* u casnalso use "elementname.classname" */
+p.class{
+    color: blueviolet;
+    background-color: aqua;
+    text-align: center;
+}
+
+/* u casnalso use "elementname#idname" */
+#id{
+    text-align: center;
+    color: chartreuse;
+    background-color: darkgoldenrod;
+    margin: 60px 150px 30px 400px;      /* T R B L */
+    padding: 30px 60px;                 /* TB LR */
+}
+/* ===================== end ================================================*/
+
+
+
+/* ================== start => no.2 ====================================*/
+.d-flex{
+    
+    display: flex;
+}
+
+
+.d-none {
+    border:1px solid red;
+    display: none;
+    height: 300px;
+    width: 300px;
+}
+.v-hidden {
+    border: 1px solid green;
+    visibility: hidden;
+    height: 300px;
+    width: 300px;
+}
+/* ===================== end ================================================*/

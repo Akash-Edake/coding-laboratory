@@ -1,0 +1,38 @@
+body {
+    /* background-color: chartreuse; */
+}
+.section-dec {
+    border:1px solid yellow !important;
+}
+#css_test {
+    border: 1px solid green;
+}
+.cts-css {
+    border:1px solid #000 !important;
+}
+/* 
+!important
+inline
+internal
+external
+id
+class
+
+*/
+
+.float-right {
+    float: right;
+    border:1px solid red;
+}
+.float-left {
+    float: left;
+    border: 1px solid green;
+}
+.float-none {
+    float: none;
+    border: 1px solid yellow;
+}
+.float-inhert {
+    float:inherit;
+    border: 1px solid rgb(61, 51, 51);
+}

@@ -1,0 +1,47 @@
+header{
+    background-color: aliceblue;
+    padding: 20px;
+    width: 1000px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    background-color: aliceblue;
+    padding: 20px;
+    width: 1000px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+main{
+  display: flex;
+  margin: 10px;
+    height: 300px;
+   
+}
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: aliceblue;
+}
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: aliceblue;
+    width: 618px;
+}
+footer{
+    background-color: aliceblue;
+    padding: 20px;
+    width: 1000px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}

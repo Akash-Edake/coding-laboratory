@@ -1,0 +1,28 @@
+section {
+    border-bottom: 10px solid red;
+}
+
+.dc-test p{
+border: 1px solid red;
+}
+
+.child-selector-test > p {
+background-color: green;
+}
+
+.adj-sibl-selector + p {
+background-color: yellow;
+}
+
+.gen-sib-selector ~ p{
+    background-color: rgb(38, 0, 255);
+}
+
+/* 
+descendent : select all element inside specific element
+Child : Select only child element inside specific element
+
+adjacent Sibling Selector=> select only single element which immediate After specific element
+General Sibling Selector => select all element After specific element
+
+*/

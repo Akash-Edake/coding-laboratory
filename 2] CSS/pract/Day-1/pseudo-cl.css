@@ -1,0 +1,57 @@
+/*======================= 
+
+selector:pseudo element{
+        properties:value;
+    }
+
+=========================*/
+
+
+.link-wrap:hover {
+    background-color: blue;
+}
+/* 
+un visited links
+*/
+a:link {
+    color: rgb(255, 0, 0);
+}
+/* visited */
+a:visited {
+    color: green;
+}
+/* active link */
+a:active {
+    color: violet;
+}
+
+
+
+
+.cl1:hover{
+    color: aqua;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+/* ==== write "tag" before ":" ======*/
+.cl1 p:first-child{
+    background-color: blue;
+}
+.cl1 p:last-child{
+   background-color: red;
+}
+.cl1 p:first-letter{
+    font-size: 30px;
+}
+
+/*  ============== mostly use ==========
+    hover
+    active
+    link
+    visited
+    checked
+    first-child
+    last-child
+    nth-child()
+    ====================================== */

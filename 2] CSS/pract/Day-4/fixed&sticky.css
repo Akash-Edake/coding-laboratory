@@ -1,0 +1,16 @@
+.fixed {
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+}
+.sticky {
+    position: sticky;
+    font-size: 30px;
+    top: 0;
+    background-color: #7cfc05;
+    
+}

@@ -1,0 +1,52 @@
+.padding-div {
+    border: 1px solid;
+    /* padding: 20px;  1 method */
+    /* method 2 */
+    /* padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 150px;
+    padding-bottom:200px ; */
+    /* method 3 */
+    padding: 20px 30px 40px 50px;
+    /* method 4 */
+    padding: 20px 40px;
+}
+.margin-div {
+    border: 1px solid red;
+    margin: 20px;
+}
+.card-wrap {
+    width: 100%;
+    display: flex;
+}
+.img-text-wrap {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid grey;
+    width: 25%;
+    text-align: center;
+    outline: 5px solid green;
+}
+.img-text-wrap img {
+    width: 40px;
+    height: 40px;
+}
+.img-text-wrap-button {
+    text-align: center;
+}
+/* .main-section div {
+    padding: 20px;
+    margin: 20px;
+} */
+.d-none {
+    border:1px solid red;
+    display: none;
+    height: 300px;
+    width: 300px;
+}
+.v-hidden {
+    border: 1px solid green;
+    visibility: hidden;
+    height: 300px;
+    width: 300px;
+}
