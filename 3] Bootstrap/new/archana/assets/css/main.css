@@ -1,0 +1,31 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a , .green-icon{
+    text-decoration: none;
+    color: #fff;
+}
+.custom-green{
+    color: greenyellow;
+}
+.custom-green-1{
+    color: green;
+}
+a:hover , .green-icon{
+    color: greenyellow;
+}
+
+.grey-icon{
+    color: grey;
+}
+.grey-icon:hover{
+    color: #fff;
+    background-color: rgb(11, 168, 11);
+
+}
+
+.custem-icon-border{
+    border: 1px solid gray;
+    border-radius: 50%;
+}
