@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        What is difference bet canvas and svg?
+
+     -->
+     <h1>HTML Canvas </h1>
+     <canvas id="c1" style="border:1px solid red" height="400px" width="400px">
+    </canvas>
+    <h1>HTML SVG</h1>
+    <svg style="border: 1px solid green;" width="400px" height="400px" class="svg-1">
+        <circle cx="100" cy="150" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        <rect width="200" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+    </svg>
+    <script>
+    var c = document.getElementById("c1");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(400, 400);
+    ctx.stroke();
+    var c = document.getElementById("c1");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95, 100, 40, 0, 4 * Math.PI);
+ctx.stroke();
+
+    </script>
+
+</body>
+</html>

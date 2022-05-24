@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/webpage.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0%;
+        }
+        body{
+            background: url("https://wallpaperaccess.com/full/1567666.png");
+            background-position: -400px 0px;
+            /* background-size: 800px; */
+        }
+        div.main{
+            width: 500px;
+            margin: 100px auto 0px auto;
+
+        }
+        h2{
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+        div.register{
+            background-color: rgb(187, 243, 243, 0.5);
+            border-radius: 20px;
+            color: #fff;;
+        }
+        form#register{
+            margin: 40px;
+        }
+        input#submit{
+            background-color: rgb(255, 13, 13,.8);
+            padding: 7px;
+            width: 200px;
+            border-radius: 9px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="register">
+            <h2>Resister Here</h2>
+            <form id="register" method="post">
+                <label>First Name:</label><br>
+                <input type="text" name="name" id="first" placeholder="Enter your First Name"><br><br>
+
+                <label>Last Name:</label><br>
+                <input type="text" name="name" id="last" placeholder="Enter your Last Name"><br><br>
+
+                <label>Birth Date:</label><br>
+                <input type="date" name="birth" id="date"><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" placeholder="Enter your Email id"><br><br>
+
+                <label>Gender</label><br>
+                <input type="radio" name="Gender" id="male">
+                <span> Male</span>
+                <input type="radio" name="Gender" id="female">
+                <span> Female</span> <br> <br>
+
+                <label>Known Language</label><br>
+                <input type="checkbox" name="lang" id="English"> <span>English</span>
+                <input type="checkbox" name="lang" id="Hindi"> <span>Hindi</span>
+                <input type="checkbox" name="lang" id="Marathi"> <span>Marathi</span><br><br>
+
+                <input type="submit" value="submit" name="submit" id="submit">
+            </form>
+        </div>
+    </div>
+
+
+</script>
+</body></html>

@@ -1,0 +1,20 @@
+Attributes:=> It provide additional information about html element.
+                Always use in open tag
+                syntax
+                <tag attribute="value">
+                
+                </tag> 
+
+Core Attributes
+1] class
+2] id
+3] style
+4] title
+
+Class/ID => no space , no special characters
+
+
+Task 1
+Create/design list using all list types
+Read all html Attributes
+https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen=""></iframe><br>
+
+    <audio src="audio.mp3" controls></audio>
+
+    <video src="Bali in 8k ULTRA HD HDR -  Paradise of Asia (60 FPS).mp4" controls></video><br>
+    <iframe src="Bali in 8k ULTRA HD HDR -  Paradise of Asia (60 FPS).mp4" frameborder="0" muted></iframe><br>
+
+
+
+    <!-- multiple src for browser support the video tag. -->
+
+    <video controls muted>
+        <!-- if use in video Tag 'src=""' ,then screen is blank -->
+
+        <source src="small.mp4" type="video/mp4">
+        <!-- if u not put type="vides/m4" or type="video/(video type)" then screen is blank -->
+
+        <source src="small.ogv" type="video/ogv">
+        <source src="small.webm" type="video/webm">
+
+    </video>
+
+
+    <audio controls>
+        <source src="sample4.aac" type="audio/aac">
+        <source src="sample-9s.mp3" type="audio/mp3">
+    </audio>
+
+
+</body>
+
+</html>

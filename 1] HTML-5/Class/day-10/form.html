@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-wrap {
+            width: 600px;
+        }
+
+        input,
+        select,
+        textarea {
+            height: 30px;
+            width: 100%;
+            margin: 10px 0px;
+        }
+
+        label {
+            width: 100%;
+            margin: 2px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Form</h1>
+    <div class="form-wrap">
+
+        <form action="../day-9/day-9.php" id="first_form">
+            <label for="username">User Name</label>
+            <input type="text" name="user" id="name" class="name_id" placeholder="Please Enter Name Here">
+            <label>Email</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            <label for="">Password</label>
+            <input type="password" name="password" id="password" visible="password">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="">
+            <label for="">Date Time</label>
+            <!-- <input type="datetime" name="" id="">
+        <label for="">Date Time Local</label> -->
+            <input type="datetime-local" name="" id="" disabled>
+            <label for="">Number</label>
+            <input type="number" name="number" id="" min="5" max="10">
+            <label for="Mobile">Mobile</label>
+            <input type="tel" name="" id="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required placeholder="123-45-678"
+                value="123-45-678" readonly>
+            <label for="">Select</label>
+
+
+            <select>
+                <option value="">9673265287</option>
+                <option value="">9673265288</option>
+
+            </select>
+
+
+            <label for="">Text Area</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="">Female</label>
+            <input type="radio" name="gender" id="Female">
+            <label for="">Check Box</label>
+            1<input type="checkbox" name="ans" id="">
+            2<input type="checkbox" name="ans" id="">
+            3<input type="checkbox" name="ans" id="">
+            4 <input type="checkbox" name="ans" id="">
+
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+</body>
+
+</html>

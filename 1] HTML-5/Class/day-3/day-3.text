@@ -1,0 +1,37 @@
+1] What is difference bet html 4 and html 5?
+Doctype
+
+
+
+
+2] What is HTML 5 ?
+HTML stands for hyper text markup language 
+HTMl is use for Create webpages
+HTML deicide web page structure
+HTML elements tell the browser how to display the content
+
+3]Which are mandatory tags in html file?
+
+4]HTML comments
+ctrl+ ?
+ctrl + n
+
+
+5] Website live process
+1] Domain [url]
+2] Hosting
+
+
+Reading Links
+https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode
+
+1] Head tags
+
+     <!-- it provides meta information to browser -->
+    <!-- 
+        1] title
+        2] favicon
+        3] meta
+        4] css links / style tag
+        5] javascript link / script tag
+     -->

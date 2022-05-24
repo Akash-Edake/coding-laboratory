@@ -1,0 +1,21 @@
+<head>
+1]title
+2]css file link
+3] js file link
+4] favicon icon
+5] meta tag
+<meta charset="UTF-8">
+        <!-- it supports to special characters -->
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- this meta is proving supports to browser of edge -->
+
+        <meta name="Viewport" content="width=device-width, scale=1.0">
+        <!-- this meta is support to responsive device -->
+
+        <meta description="" keyword="">
+        <!-- this meta is used for SEO -->
+</head>
+
+Task:
+1] Write code for html start template
