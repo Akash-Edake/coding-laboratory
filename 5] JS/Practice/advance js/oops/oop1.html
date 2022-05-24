@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>by using oops</h2>
+    <input type="number" placeholder="value-1" id="value1">
+    <input type="number" placeholder="value-2" id="value2"> <br><br>
+    <input type="number" placeholder="value-3" id="value3">
+    <input type="number" placeholder="value-4" id="value4"> <br><br>
+    <button onclick="f1()">click</button>
+    <h4 id="output"></h2>
+        <h4 id="output1"></h2>
+
+    <script>
+        function f1() {
+       
+            let a =parseFloat (document.getElementById("value1").value)
+            let b =parseFloat (document.getElementById("value2").value)
+            let d =parseFloat (document.getElementById("value3").value)
+            let e =parseFloat (document.getElementById("value4").value)
+       
+            class class_name {
+                msg(a,b){
+                    //document.getElementById("output").innerHTML=` ${a} + ${b} = ${a+b}<br>`
+                    
+                    document.write(` ${a} + ${b} = ${a+b}<br>`)
+                }
+                msg1(d,e){
+                   
+                    //document.getElementById("output1").innerHTML=` ${d} + ${e} = ${d+e}<br>` 
+                    document.write(` ${d} + ${e} = ${d+e}<br>`)
+                }
+               
+                
+            }
+            let c = new class_name()
+            c.msg(a,b)
+            c.msg1(c,d)
+        
+        }
+    </script>
+</body>
+
+</html>

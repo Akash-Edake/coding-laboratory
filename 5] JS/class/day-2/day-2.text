@@ -1,0 +1,27 @@
+What is javascript Variables?
+-It is container to store the data.
+
+What is data types in javascript?
+1] Primitive data types
+    1] string
+    2] number
+    3] boolean 
+    4] null
+    5] undefined
+    6] symbol
+2] Non Primitive
+    1] Object
+  
+a='' //string
+b='100' // string
+c= 100; //int/number
+d = true //boolean
+e = null //null
+var f; //undefined
+g = {
+    key:value  // object
+}
+h= [123,'test'] //object
+
+
+typeof(var) // find data type

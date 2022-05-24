@@ -1,0 +1,41 @@
+if => Condition Statement
+
+if(Condition){
+    block code for Condition
+}
+
+//if else
+if(condition){
+
+}else{
+
+}
+
+//else if
+
+if(Condition){
+
+}else if(condition){
+
+}else if(Condition){
+
+}else{
+    
+}
+
+Switch: Select one of many code block to be executed
+
+switch(condition){
+case 0:
+code block
+break;
+.
+.
+.
+.
+.
+
+.
+default:
+code block
+}

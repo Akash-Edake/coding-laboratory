@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style id="styling">
+    
+</style>
+<body>
+    <h1>compiler</h1>
+    <textarea name="" id="" cols="30" rows="10" placeholder="write HTML code" onkeyup="html(this)"></textarea>
+    <textarea name="" id="" cols="30" rows="10" placeholder="write css code" onkeyup="css(this)"></textarea>
+    <p id="output"></p>
+
+    <script>
+        html = (input) => {
+            document.getElementById('output').innerHTML = input.value
+        }
+        css = (input) => {
+            document.getElementById('styling').innerHTML = input.value
+        }
+    </script>
+    
+</body>
+
+</html>

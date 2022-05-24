@@ -1,0 +1,30 @@
+img {
+    height: 23px;
+    border-radius: 50%;
+}
+
+.cust3 {
+    position: relative;
+}
+
+.cust-class {
+    border-top: 100px solid rgb(179, 16, 16);
+    border-right: 100px solid black;
+    position: relative;
+}
+
+.date-wrap {
+    position: absolute;
+    margin: -79px 161px;
+    line-height: 12px;
+}
+
+.cust2 {
+    position: relative;
+    background-color: black;
+}
+
+.text-wrap {
+    position: absolute;
+    margin: 0 29%;
+}

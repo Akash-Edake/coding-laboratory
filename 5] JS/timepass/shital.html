@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="input">
+    <button onclick="f1()">check</button>
+    <h2 id="output"></h2>
+
+    <script>
+        function f1(){
+            var a = document.getElementById("input").value
+            if (a>=18){
+                document.getElementById("output").innerHTML = "tu mottha zala baba atta."
+            }else{
+                document.getElementById("output").innerHTML = "tu ajun chota aahe."
+            }
+        }
+    </script>
+</body>
+</html>

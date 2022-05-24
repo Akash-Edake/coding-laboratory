@@ -1,0 +1,36 @@
+for (initializationStatement; testExpression; updateStatement)
+{
+    // statements inside the body of loop
+}
+
+
+var initializationStatement 
+while (testExpression) {
+  // the body of the loop 
+  //updateStatement
+}
+
+
+var initializationStatement 
+do {
+  // the body of the loop
+  //updateStatement
+}
+while (testExpression);
+
+
+
+class Class_name{
+    constructor(){ //methode1 =
+
+    }
+    msg(){  // methode2 = 
+
+    }
+    static msg(){   // methode3 = 
+
+    }
+}
+let a = new Class_name()  //object decleration
+a.msg() //
+Class_name.msg()//

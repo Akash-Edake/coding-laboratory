@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits. Your task is to create a function that takes a string and returns true if the PIN is valid and false if it's not.</p>
+    <input type="number" id="input">
+    <button onclick="f1()">click</button>
+    <p id="output"></p>
+
+    <script>
+        f1 = () => {
+            let a = document.getElementById('input').value;
+
+            if ((a.length == 4) || (a.length == 6)) {
+                document.getElementById('output').style.color = 'green'
+                document.getElementById('output').innerHTML = 'Accepted PIN codes'
+            } else {
+                document.getElementById('output').style.color = 'red'
+                document.getElementById('output').innerHTML = 'Allow 4 or 6 digit PIN codes'
+            }
+        }
+    </script>
+</body>
+
+</html>
