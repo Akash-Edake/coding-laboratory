@@ -1,0 +1,669 @@
+1.What is any type, and when to use it? 
+
+==> -Any is a data type in TypeScript. 
+    -Any type is used when we deal with third-party programs.
+    -used when we dont hv knowledge of datatype of variable & want dynamic content from source.
+    -Any data type is used for type checking during compilation.
+    -for e.g
+            let temp: any;
+            temp = "string";
+            temp = 2;
+            temp = true;
+
+2. What is closure? 
+
+==> -closure is action that is inner function can have access to the outer function variables 
+    -as well as global variables.
+    -closure gives u access to an outer function scope in inner function.
+    -provide benefit of data hiding and data encapsulation(oops).
+    -for eg.
+            function outer(b) 
+            {
+                var a = "hello";    //a is local var created by outer function 
+                function inner()  // closure function
+                {
+                    return a + b;  //values of a and b are accessed from outer scope/parent function. 
+                }
+                return inner();      //output: helloworld
+            }
+            console.log(outer("world"));
+
+3. What are datatype in javascript? 
+
+==> -Number        --let a=10,let b=10;
+    -boolean       -- return true or false
+    -string        -- eg let a='hello'; let b="hello"; let c=`hello`;
+    -undefined     -- return when value is not assinged to var.
+    -null          -- let a=null; then the type of a is object.
+    -NaN           ---return NaN when result of arithmetic op is not an number
+    for eg.
+        let name1 = 'dhanu';
+        console.log(typeof(name1)); // returns "string"
+
+        let number = 4;
+        console.log(typeof(number)); //returns "number"
+
+        let valueChecked = true;
+        console.log(typeof(valueChecked)); //returns "boolean"
+
+        let a = null;
+        console.log(typeof(a)); // returns "object"
+
+        let b;
+        console.log(typeof(b)) //retrun undefined
+
+        let c = [];
+        console.log(typeof(c)) //return object
+
+        let num = 10;
+        let div = 0;
+        console.log(div = num / "hello");  //return NaN  
+
+4. What is variable typing? 
+
+==> --JavaScript is a loosely typed language(i.e. the variables are declared without a type).
+    --In JS, variable type is determined only when a value is assigned.
+    --reassign data of a different type to the same variable (accidentally or on purpose),
+      & the compiler will not generate an error.
+    --JS automatically adjust the datatype while assigning or reassigning the variables.
+
+    for eg:
+        var x;           // Now x is undefined
+        x = 5;           // Now x is a Number
+        x = "hello";      // Now x is a String
+
+5.What is call back function in JS? 
+
+==> --A callback is a function passed as an argument to another function.
+    --A callback function can run after another function has finished
+    
+    --for eg.
+        let msg = () => {
+            console.log("this msg display after 5 second");
+        }
+        setTimeout(msg, 5000); //msg is a callback function
+
+6.What is splice? How can I replace chars inside the string? 
+
+==> --splice method used to removing and/or adding elements in array.
+    --splice method overwrites the original array.
+
+    --eg.
+        var str = "hello";
+        let str1 = str.split('');
+        console.log(str1);
+        str1.splice(2, 1, 'a');
+        console.log(str1);
+        let result = str1.join('');
+        console.log(result);
+
+        //op
+        [ 'h', 'e', 'l', 'l', 'o' ]
+        [ 'h', 'e', 'a', 'l', 'o' ]
+        healo
+
+7. Solve 10+20+’30’ and ‘10’+20+30? 10 + '20' + 30 
+
+==> console.log(10 + 20 + '30'); //op: 3030
+    console.log('10' + 20 + 30); //op :102030
+    console.log(10 + '20' + 30); //op: 102030
+
+9. Difference between local storage, session and cookie? 
+
+==> local storage: 
+            --stored data in brower session. localStorage data does not expire, when the page 
+            session ends – that is when the page is closed.
+            --having 4 methods:
+            1.setItem()=
+                 It is used to store the value in a particular location with the name of the key.
+                 syntax: localStorage.setItem(key, value)
+            2.getItem()=
+                used to get the value stored with a particular key name.
+                syntax: localStorage.getItem(key)
+            3.removeItem()=
+                used to remove the value stored in the memory in reference to key.
+                syntax: localStorage.removeItem(key)
+            4.clear()=
+                used to clear all the values stored in localstorage.
+                syntax: localStorage.getItem(key)
+    session storage:
+            --Session Storage objects can be accessed using the sessionStorage read-only property.
+            --sessionStorage data is cleared when the page session ends.
+            --having 4 methods:
+            1.setItem()
+            2.getItem()
+            3.removeItem()
+            4.clear()   
+
+    cookies:
+        --“cookie” refers to just the textual information about a website
+        -- Both clients and servers can read and write the cookies 
+
+14.WAP to print hello1 hello2 hello3 without usnig loop? 
+
+==>  console.log("hello1" + " " + "hello2" + " " + "hello3");
+
+15. What is the difference between calback and promises? 
+
+==> --A promise is an object which is used to handle the asynchronous result of an operation.
+    --A callback is an function which is passed to another function as an argument. 
+      it do not return any result.
+
+16. What is the data type of null ? what is the data type of undefined? 
+
+==>  --data type of null is object.
+     --data type of undefined is undefined.
+     
+17. var a={ } var b={ } console.log(a==b); console.log(a===b)	?? 
+
+==>     var a = {}
+        var b = {}
+        console.log(a == b); //false bcz two seperate object never be equals.
+        console.log(a === b); //false
+        let x = a;
+        console.log(x === a); //it gives true
+
+18. function abc(x) { return (y){ return (x+y) } then how we call above 
+    function so that output should be addition? 
+
+==>         function abc(x) {
+                var y = 10;
+                // return (y);
+
+                function xyz() {
+                    return x + y;
+                }
+                return xyz();
+            }
+            console.log(abc(10));
+
+19. a={1,2,,,,,,,10} then length of a? and what are other elements empty or null or undefined?
+
+==> let a = [1, 2, , , , , , , 10]
+    console.log(a.length);
+    console.log(a);
+    output:
+    length= 9
+    other elements are empty.
+
+
+20.What is negative infinity? 
+==>
+      --The negative infinity in JavaScript is a constant value which is used to represent 
+        a value which is the lowest available. This means that no other number is lesser than 
+        this value. It can be generated using a self-made function or by an arithmetic operation.
+
+      --JavaScript shows the NEGATIVE_INFINITY value as -Infinity.
+
+      --Negative infinity is different from mathematical infinity in the following ways:
+
+      --Negative infinity results in 0 when divided by any other number.
+      --When divided by itself or positive infinity, negative infinity return NaN
+      --Negative infinity, when divided by any positive number (apart from positive infinity) 
+        is negative infinity.
+      --Negative infinity, divided by any negative number (apart from negative infinity) 
+        is positive infinity.
+      --If we multiply negative infinity with NaN, we will get NaN as a result.
+      --The product of NaN and negative infinity is 0.
+      --The product of two negative infinities is always a positive infinity.
+      --The product of both positive and negative infinity is always negative infinity.
+      --Syntax:
+
+        Number.NEGATIVE_INFINITY
+
+
+21. If the array“ foo” has a length of 10, what is the index of the 
+       first element in the array ?
+==>
+            let foo = [1, 2, 3, 4, 5, 6, 7, 8, 9,10];
+            console.log(foo.length);
+            console.log(foo.indexOf(1));  //output 0;
+
+22. If the array “foo” has a length of 10, what is the index of the last element in the array? 
+
+==>         let foo = [1, 2, 3, 4, 5, 6, 7, 8, 9,10];
+            console.log(foo.length);
+            console.log(foo.indexOf(foo.length));   //output 9
+
+23. function hi(h, j=10){ console.log(h +j ) } And call this function as 
+    hi(10) and hi(10,50) What will be the output in both cases? 
+
+==>         function hi(h, j = 10) {
+                console.log(h + j)
+            }
+            hi(10);     //output=20
+            hi(10, 50); //output=60
+
+24.abcz = "abc_100_pqr_50_10_xyz" solve it for getting output 160 
+
+==> let abc = 100;
+    let pqr = 50;
+    let xyz = 10;
+    let abcz = abc + pqr + xyz;
+    console.log(abcz);
+
+25. What is diff between ES5 and ES6 ? 
+
+==> ES5 : 
+    --ECMA script is a trademarked scripting language specification defined by Ecma international.
+    --It was introduced in 2009.
+    --It supports primitive data types that are string, number, boolean, null, and undefined.
+    --There are only one way to define the variables by using the var keyword.
+    --It has a lower performance as compared to ES6.
+    --Object manipulation is time-consuming in ES5.
+    --In ES5, both function and return keywords are used to define a function.
+    --It provides a larger range of community supports than that of ES6
+   ES6 :
+    --ECMA script is a trademarked scripting language specification defined by Ecma international.
+    --It was introduced in 2015.
+    --In ES6, there are some additions to JavaScript data types. It introduced a new primitive data type ‘symbol’ 
+      for supporting unique values. 
+    --There are two new ways to define variables that are let and const.
+    --It has a higher performance than ES5.
+    --Object manipulation is less time-consuming in ES6.
+    --An arrow function is a new feature introduced in ES6 by which we don’t require the 
+      function keyword to define the function.
+    --It provides a less range of community supports than that of ES5.
+
+26. What is a call(), apply(), bind() method in JS? 
+
+==> call()-
+            The call() method calls a function with a given this value and arguments 
+            provided individually.
+    bind()-
+            The bind() method creates a new function that, when called, 
+            has its this keyword set to the provided value.
+    
+    --The main differences between bind() and call() is that the call() method:
+
+        -Accepts additional parameters as well
+        -Executes the function it was called upon right away.
+        -The call() method does not make a copy of the function it is being called on.
+
+39. Diff bet call() and apply() in javascript? 
+==>
+    --call() and apply() serve the exact same purpose. The only differenceis that 
+      call() expects all parameters to be passed in individually, whereas 
+      apply() expects an array of all parameters.
+
+27. what is const ? how to use const in es6? 
+==>
+    --const keyword introduced in es6 version. 
+    --Variables defined with const cannot be Redeclared.
+    --Variables defined with const cannot be Reassigned. 
+    --Variables defined with const have Block Scope.
+    
+    --Use const when you declare:
+        A new Array
+        A new Object
+        A new Function
+        A new RegExp    
+    -- for eg.
+        const a=10;
+        a=20;   //throw error
+        a=10+30; //throw error
+
+28. In which way we can insert element to array? 
+==> 
+    methods are used to insert element in array
+        --push()    ==adds element at the end of array
+        --splice()  ==aads element at the perticular position. 
+        --unshift() ==adds element at the start in array.
+        --length()  ==adds elements at the end.
+            const ar = [1, 2, 3, 4, 5];
+            var len = ar.length;
+            ar[len] = 6;
+            console.log(ar);  //output:[1,2,3,4,5,6]
+
+
+29. how to add the data in array in es6? 
+==>
+
+
+
+30 .Write a program for find a prime number?
+
+==>     let num = 15;
+        var prime = true;
+        for (i = 2; i < num; i++) {
+            if (num % i == 0) {
+                prime = false;
+            }
+        }
+        if (prime) {
+            console.log("prime")
+        } else {
+            console.log("not prime");
+        }
+
+31. Write a program for palindrome number? 
+
+==>         let str = "madam";
+            let str2 = str.split('');
+            console.log(str2);
+            let str3 = str2.reverse();
+            console.log(str3);
+            let str4 = str3.join('');
+            console.log(str4);
+
+            if (str === str4) {
+                console.log("string is palindrome");
+            } else {
+                console.log("string is not palindrome");
+            }
+
+32. Write a program in JS :- Input :- var abc="ABC123PQR456XYZ789" 
+    OUTPUT :-ABCPQRXYZ123456789 
+==>  //method 1
+    var abc = "ABC123PQR456XYZ789";
+    let letters = abc.match(/[a-zA-Z]/g)
+    let num = abc.match(/[0-9]/g);
+    let char = letters.join('');
+    console.log(char);
+    let digits = num.join('');
+    console.log(digits);
+    let result = char.concat(digits);
+    console.log("output is=",result);
+
+    //method 2
+
+    var abc = "ABC123PQR456XYZ789";
+    var seperate = abc.split("");
+    var arr1 = [];
+    var arr2 = [];
+    var seperate1 = seperate.forEach((element) => {
+        if (!isNaN(element)) { // if element is a number
+            arr1.push(element);
+        } else if (isNaN(element)) { //if element is not a number
+            arr2.push(element);
+        }
+    });
+    var concat_arr = arr2.concat(arr1)
+    var join_arr = concat_arr.join("");
+    console.log(join_arr);
+
+33. If s="This is javascript." check whether "script" string is there or not? 
+
+==>     let s = "This is javascript.";
+        console.log(s.includes("script")); //output: true
+
+34. a=["A", "B" ,"Man", "Dog", "cat"] check whether "cat" string is there or not?
+==>
+        let a = ["A", "B", "Man", "Dog", "cat"];
+        let result = a.forEach(element => {
+            if (element === "cat") {
+                return true;
+            }
+        });
+        console.log("cat is there");
+
+
+35. Ashynchornus in java script 
+==>
+        --In asynchronous operations,you can move to another task before the previous one finishes
+        --Functions running in parallel with other functions are called asynchronous.
+         
+            function demo() { // this run after 2 seconds
+                console.log("hello javascript");
+            }
+            setTimeout(demo, 2000);
+            function add() {    //this function run first 
+                let n1 = 10,
+                    n2 = 20;
+                let sum = n1 + n2;
+                console.log("result", sum);  //op=30
+            }
+            add();
+
+
+36 Splice function in JS? 
+==> --splice() adds/remove the elements to/form an array.
+    --splice() overwrites the original aaray.
+    --syntax
+        array.splice(index, howmany, item1, ....., itemX)
+        index-the position of add/remove elements.
+        howmany-optional. how many elements want to remove.
+        item1,...itemx- optional. new elements to be add.
+
+
+37. What is hoisting in javascript? 
+==>
+        --JavaScript Hoisting refers to the process whereby the interpreter appears to move the 
+          declaration of functions, variables or classes to the top of their scope, 
+          prior to execution of the code.
+
+
+42. variable hoisting in js? 
+
+==>     --var hoisting
+            console.log(num); // Returns 'undefined' 
+            var num; // Declaration
+            num = 6; // Initialization
+            console.log(num); // Returns 6 after the line with initialization is executed.
+        
+        --let hoisting:
+            console.log(num); //undefined ReferenceError: Cannot access 'num' before initialization
+            let num = 20;
+
+        --const Hoisting: 
+            console.log(num1); //undefined ReferenceError: Cannot access 'num' before initialization
+            const num1 = 20;
+
+        --function hoisting:
+            we can use a function before declare it.
+            hello();    
+            function hello() {
+                console.log("hello");
+            }      
+
+38. Prototypal Inheritance in javascript? 
+==>
+        --objects and methods can be shared, extended, and copied.
+        --The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects. 
+        --It is a method by which an object can inherit the properties and methods of another object.
+         for eg.
+          // object birds
+                let birds = {
+                    talk: true,
+                    canfly() {
+                        return "yes, can fly";
+                    }
+                };
+          //object duck  
+            let duck = {
+            canSwim() {
+                return "yes, can swin"
+            },
+            __proto__: birds, //inheriting the properties & method of birds
+        };
+        console.log(`can duck talk ${duck.talk}`);  //property of birds accessed in duck 
+        console.log(`can duck fly ${duck.canfly()}`); //method of birds accssed in duck
+        console.log(`can duck swim ${duck.canSwim()}`);
+        // console.log(birds.__proto__ = duck.canSwim()); //we can also write like this.
+
+38. Prototype Inheritance
+==>
+        // constructor function
+        function Person() {
+            this.name = 'John',
+                this.age = 23
+        }
+        // creating objects
+        const person1 = new Person();
+
+        // adding property to constructor function
+        Person.prototype.gender = 'male';
+
+        // prototype value of Person
+        console.log(Person.prototype);
+
+
+40.Diff bet Settimeout() and Set-timeinterval ?
+
+==> --setTimeout() triggers the expression only once while 
+    --setInterval() keeps triggering expression regularly after the given interval of time. 
+      (unless you tell it to stop). 
+
+
+43. Prototype in js? 
+==>
+        --In JavaScript, every function and object has a property named prototype by default.
+        --It is actually an instance of an object and every function in JavaScript 
+        has one whether you use it or not. 
+
+
+49 What are the different keywords to declare variables in javaScript? 
+
+==>
+        var  (introduced in es5)
+        let  (introduced in es6)
+        const (introduced in es6)
+
+
+50 Ways to create objects in javaScript? 
+==>
+    --creating object with constructor
+      for eg:
+            function demo(name,age){
+                this.name=name;
+                this.age=age;
+            }
+       let a=new demo("dhanashri",25);  //new keyword used to create a object.
+       console.log(a.name);  //op= dhanashri
+
+    --Using object literals:
+      for eg.
+            let fullName = {"name": "dhanashri", "age": 25}  //object with object literals
+            console.log(fullName.name);
+
+    --Creating object with Object.create() method:
+        -The Object.create() method creates a new object, using an existing object as the 
+         prototype of the newly created object.
+         for eg.
+            const data = {
+                displayInfo: function() {
+                    console.log(`my name is ${this.name} and from ${this.city}`)
+                }
+            }
+            let d1 = Object.create(data);
+            d1.name = "dhanashri";
+            d1.city = "belgaum";
+            d1.displayInfo();
+
+        --Using es6 classes:
+            class demo {
+                constructor(fname, lname) {
+                    this.fname = fname;
+                    this.lname = lname
+                    console.log(`my name is ${this.fname} ${this.lname}`);
+                }
+            }
+            let d = new demo("dhanashri", "mane"); //create the object of demo class using new keyword
+
+
+55. Explain the javaScript class syntax. 
+==>
+        class demo{                   //class keyword is used to declare a class
+            constructor(num1,num2){   //arguments
+                this.num1=num1;
+                this.num2=num2;`        
+            }
+            add(){}                    //methods of class
+            substract(){}
+        }
+        let a=new demo();              //creating object of class using new keyword
+
+56. Explain the arrow function syntax in TypeScript. 
+==> 
+    Arrow Function
+        In arrow function we need not to write a function keyword.
+        syntax:
+            (parameter1, parameter2, ..., parameterN) => expression;  
+        for eg
+            let sum = (num1, num2) => {
+                return (num1 + num2);
+            }
+            console.log(sum(10, 20));  //ouput=30
+
+    Function :
+            function sum(num1,num2){
+                return num1+num2;
+            }
+            console.log(sum(10,20))  //op=30
+
+    Anonymous Function:
+        means the function without name
+       for eg.
+        let add = function(a, b) {
+            return sum = a + b;
+        };
+        console.log(add(10, 20));
+
+64. In Javascript how to check two array same or not? 
+
+==>     isArray() method return true if the object is array.
+        length return true if length of two array is same
+        and every() checks whether the element of array same or not and return true /false. 
+        
+        const a = [1, 2, 3];
+        const b = [4, 5, 6];
+        const c = [1, 2, 3];
+        console.log(a === c); //false
+        function arrayEquals(arr1, arr2) {
+            return Array.isArray(arr1) && Array.isArray(arr2) && arr1.length === arr2.length &&
+                arr1.every((val, index) => val === arr2[index]);
+        }
+        console.log(arrayEquals(a, b)); // false
+        console.log(arrayEquals(a, c)); //true
+
+66 for(var i=0; i<10 ; i++) { setTimeout(()=>{ console.log(i)}, 1000*i); } 
+==>
+        for (var i = 0; i < 10; i++) {
+            setTimeout(() => {
+                console.log(i)
+            }, 1000 * i);
+        }
+
+        output: 10 displayed 10 times, each after 1 second.
+       
+67. How to print only prime number from result of division of that number where 
+    input is given a number 
+==>
+
+            let num = 5485;
+            let result = num / 5;
+            console.log(result);
+            let num1 = result.toString().split("");
+            console.log(num1);
+            // let num2 = num1.split('');
+            // console.log(num2);
+
+68. what o/u of following programme :: var a,b; a=1,b=2; console.log(a+b); console.log(a-b); 
+==>
+            var a, b;
+            a = 1, b = 1;
+            console.log(a + b);  //op-2
+            console.log(a - b);  //op-0
+
+70  IF a=[1,2,3,4,5,6,7,8,9] Separate the element greater than 7? 
+I will change the order of element without for loop? 
+==>
+            var a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            let sep = a.filter(ele => ele > 7);
+            console.log(sep);  //[8,9]
+
+71. Let a = { "name": "gorakh" },let b = { "age": 29 }copy both object in let c ?==>
+==>
+        //method 1
+            let a = { "name": "gorakh" };
+            let b = { "age": 29 };
+            let c = {
+                ...a,
+                ...b //spred oparator
+            }
+            console.log(c); //op={ name: 'gorakh', age: 29 }
+
+        //method 2
+            console.log(c);
+            let arr = Object.assign(a, b);
+            console.log(arr); // //op={ name: 'gorakh', age: 29 }
