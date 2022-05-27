@@ -828,6 +828,20 @@
 
                 <details>
                     <summary class="pen"> 24 abcz = "abc_100_pqr_50_10_xyz" solve it for getting output 160 </summary>
+    <pre class="code">
+let str = "abc_100_pqr_50_10_xyz" ;
+let res = str.replace(/\D/g, ","); // Get only number
+let f1 = res.split(",") //conver in array
+f2 = f1.filter(ele=>ele>0) //only choose number in array
+
+sum =0;
+f2.forEach(element => {
+   return (
+    sum+=parseFloat(element)  //convert string into number
+   )
+});
+console.log(sum)
+    </pre>
                 </details> <br>
 
 
@@ -1032,7 +1046,7 @@
 
 
                 <details>
-                    <summary class="pen"> 35 Ashynchornus in java script36 Splice function in JS? </summary>
+                    <summary class="pen"> 35 Ashynchornus in java script </summary>
                     <ul>
                         <li> In asynchronous operations,you can move to another task before the previous one finishes
                         </li>
@@ -1090,8 +1104,8 @@
                 <details>
                     <summary> 39 Diff bet call() and apply() in javascript? </summary>
                     <ul>
+                       <li> The only difference is call() method takes the arguments separated by comma while</li>
                         <ul>
-                            The only difference is call() method takes the arguments separated by comma while
                             <li>Example 1: This example uses call() method to call a function. </li>
                         </ul>
                         <li> apply() method takes the array of arguments. </li>
@@ -1147,13 +1161,6 @@
                         <li> It is actually an instance of an object and every function in JavaScript has one whether
                             you use it or not. </li>
                     </ul>
-                </details> <br>
-
-
-
-
-                <details>
-                    <summary> 44 Closure ? </summary>
                 </details> <br>
 
 
@@ -1320,10 +1327,7 @@ console.log(add(10, 20));
 
 
 
-                <details>
-                    <summary> 61 What is diiference between let and var? </summary>
-                </details> <br>
-
+               
 
 
 
@@ -1440,8 +1444,7 @@ console.log(add(10, 20));
 
 
                 <details>
-                    <summary> 72 What are the methods to create objects?73 Difference between setTimeOut() and
-                        setImmediate()?
+                    <summary> 72 What are the methods to create objects?
                     </summary>
                 </details> <br>
 
@@ -1449,7 +1452,7 @@ console.log(add(10, 20));
 
 
                 <details>
-                    <summary> 74 Difference between ES5 and ES6? </summary>
+                    <summary> 73 Difference between setTimeOut() and setImmediate()? </summary>
                 </details> <br>
 
 
