@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+        .right {
+            margin-right: 50%;
+            margin-bottom: 10%;
+        }
+
+        .left {
+            margin-left: 50%;
+            margin-bottom: 10%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .img {
+                height: 400px;
+                width: 100%;
+
+            }
+
+            .right {
+                margin-right: 00%;
+                margin-bottom: 20%;
+                font-size: xx-small;
+            }
+            .left {
+                margin-left: 00%;
+                margin-bottom: 20%;
+                font-size: xx-small;
+            }
+
+            .button {
+                padding: 2px ;
+                font-size: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid my-2">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">BOPPO</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Movie</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">My List</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner  ">
+                        <div class="carousel-item active">
+                            <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP.jpg"
+                                class="d-block w-100 img" alt="...">
+                            <div class="carousel-caption right text-start ">
+                                <h1>AK_47</h1>
+                                <div class="mb-3"><u>long life</u></div>
+                                <div>
+                                    <button type="button" class="btn btn-secondary button">JS</button>
+                                    <button type="button" class="btn btn-secondary button">React-js</button>
+                                    <button type="button" class="btn btn-secondary button">Full-stack</button>
+                                </div>
+                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil consequuntur illum,
+                                    rerum debitis aliquid error numquam. Tempore cupiditate voluptatem reprehenderit
+                                    illum nemo, magnam, veritatis fugiat velit modi fuga sit, doloremque at
+                                    exercitationem omnis iure deserunt. </p>
+                                <div>
+                                    <button type="button" class="btn btn-primary button">Buy Now for UR life</button>
+                                    <button type="button" class="btn btn-outline-primary button">add wish list</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/MLP_Template_Image_Left.jpg"
+                                class="d-block w-100 img" alt="...">
+
+                            <div class="carousel-caption left text-start ">
+
+                                <div class="">
+                                    <h1>AK_47</h1>
+                                    <div class="mb-3"><u>long life</u></div>
+                                    <div>
+                                        <button type="button" class="btn btn-secondary button">JS</button>
+                                        <button type="button" class="btn btn-secondary button">React-js</button>
+                                        <button type="button" class="btn btn-secondary button">Full-stack</button>
+                                    </div>
+                                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil consequuntur
+                                        illum,
+                                        rerum debitis aliquid error numquam. Tempore cupiditate voluptatem reprehenderit
+                                        illum nemo, magnam, veritatis fugiat velit modi fuga sit, doloremque at
+                                        exercitationem omnis iure deserunt. </p>
+                                    <div>
+                                        <button type="button" class="btn button btn-primary">Buy Now for UR life</button>
+                                        <button type="button" class="btn button btn-outline-primary">add wish list</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/IN-kids-30Jan._CB1517304519_.jpg"
+                                class="d-block w-100 img" alt="...">
+                            <div class="carousel-caption right text-start">
+                                <h1>AK_47</h1>
+                                <div class="mb-3"><u>long life</u></div>
+                                <div>
+                                    <button type="button" class="btn btn-secondary button">JS</button>
+                                    <button type="button" class="btn btn-secondary button">React-js</button>
+                                    <button type="button" class="btn btn-secondary button">Full-stack</button>
+                                </div>
+                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil consequuntur illum,
+                                    rerum debitis aliquid error numquam. Tempore cupiditate voluptatem reprehenderit
+                                    illum nemo, magnam, veritatis fugiat velit modi fuga sit, doloremque at
+                                    exercitationem omnis iure deserunt. </p>
+                                <div>
+                                    <button type="button" class="btn button btn-primary">Buy Now for UR life</button>
+                                    <button type="button" class="btn button btn-outline-primary">add wish list</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner mx-4 my-4">
+                        <div class="carousel-item active d-md-flex">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/3fc6a0df369dc9002cc12e2eaa6b42ebd435d21fadf6251a57bd721aa9a4dbf8._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/ea318162fcd472581d2f2eb3e7368b72de01b673f4ff8a736b95e94e221cfa1e._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/ed05f98ca8d40b9a145c9df945772883ddc7108ef9cf770fba690c7d09324b32._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/309ae09df80344f7e29903679ad4b920677bc3a22800ad0f62b36bcd8a587163._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/7703d3921d5c63150cfcdd72b16dd3010e07fc2ec77e95e2c9a162e33bdf1769._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item d-md-flex">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/c78cc6073967bd5a6d705c7afb132c7492b0120e192045b8a219c4778331666d._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/2b916efbc980eff89b49bef08473658de11d0686170efb691814aabcc0e12457._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/5907682916e005eacaa4d30a42588ef38d66612854f4dd66bd358278998722b9._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/f91da077efbd98863d60a6f1b2ee01346e32ecbed17ee95c3186362b2ce4f3cb._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/606bb6d02e4a4d5c62b1b63935d928460df242287aca343935e7b74c90cdccab._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner mx-4 my-4">
+                        <div class="carousel-item active d-md-flex">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/3fc6a0df369dc9002cc12e2eaa6b42ebd435d21fadf6251a57bd721aa9a4dbf8._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/ea318162fcd472581d2f2eb3e7368b72de01b673f4ff8a736b95e94e221cfa1e._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/ed05f98ca8d40b9a145c9df945772883ddc7108ef9cf770fba690c7d09324b32._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/309ae09df80344f7e29903679ad4b920677bc3a22800ad0f62b36bcd8a587163._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/7703d3921d5c63150cfcdd72b16dd3010e07fc2ec77e95e2c9a162e33bdf1769._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="carousel-item d-md-flex">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/c78cc6073967bd5a6d705c7afb132c7492b0120e192045b8a219c4778331666d._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/2b916efbc980eff89b49bef08473658de11d0686170efb691814aabcc0e12457._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/5907682916e005eacaa4d30a42588ef38d66612854f4dd66bd358278998722b9._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/f91da077efbd98863d60a6f1b2ee01346e32ecbed17ee95c3186362b2ce4f3cb._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/606bb6d02e4a4d5c62b1b63935d928460df242287aca343935e7b74c90cdccab._UR1920,1080_RI_SX356_FMwebp_.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

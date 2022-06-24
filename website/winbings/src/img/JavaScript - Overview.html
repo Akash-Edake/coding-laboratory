@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://www.tutorialspoint.com/javascript/javascript_overview.htm -->
+<html lang="en-US"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="stndz-style"></style>
+<title>JavaScript - Overview</title>
+
+<meta name="description" content="JavaScript - Overview,  JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side ">
+<link rel="canonical" href="https://www.tutorialspoint.com/javascript/javascript_overview.htm">
+<link rel="shortcut icon" href="https://www.tutorialspoint.com/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link rel="stylesheet" href="./JavaScript - Overview_files/css2">
+<link id="style-switch" rel="stylesheet" href="./JavaScript - Overview_files/style-min.css">
+<link rel="stylesheet" href="./JavaScript - Overview_files/custom.css">
+<style>.navbar-expand-xl .navbar-brand .navbar-brand-item, .h-100px, ul.toc li.heading, .light-mode-item, .dark-mode-item, .back-top, a.demo, .home-intro-sub{background:#f8ba24; color:#fff;} 
+.btn-grey-border{background:#f8ba24; color:#fff; border:1px solid #f8ba24;} .course-box{background:#f8ba24;} 
+</style>
+<script type="text/javascript" async="" src="./JavaScript - Overview_files/analytics.js.download"></script><script type="text/javascript" async="" src="./JavaScript - Overview_files/js"></script><script id="adp1" data-cfasync="false">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script><script src="./JavaScript - Overview_files/adpushup.js.download" type="text/javascript" async=""></script>
+<script id="adp2" data-cfasync="false">(function(w, d) {var s = d.createElement('script'); s.src = '//delivery.adrecover.com/18107/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script><script src="./JavaScript - Overview_files/adRecover.js.download" type="text/javascript" async=""></script>
+<link rel="stylesheet" type="text/css" href="./JavaScript - Overview_files/prettify.css"><style>@font-face {
+              font-family: 'Open Sans Regular';
+              font-style: normal;
+              font-weight: 400;
+              src: url('chrome-extension://gkkdmjjodidppndkbkhhknakbeflbomf/fonts/open_sans/open-sans-v18-latin-regular.woff');
+          }</style><style>@font-face {
+              font-family: 'Open Sans Bold';
+              font-style: normal;
+              font-weight: 800;
+              src: url('chrome-extension://gkkdmjjodidppndkbkhhknakbeflbomf/fonts/open_sans/open-sans-v18-latin-800.woff');
+          }</style><iframe src="./JavaScript - Overview_files/index.html"></iframe></head>
+<body>
+<div class="navbar-top navbar-dark d-xl-block py-2 mx-2 mx-md-4 rounded-bottom-4">
+	<div class="container-fluid px-3 px-xl-0">
+		<div class="d-lg-flex justify-content-lg-between align-items-center top-nav-links">
+			<ul class="nav align-items-center justify-content-center">
+				<li class="nav-item" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Home Page">
+					<a class="nav-link" href="https://www.tutorialspoint.com/index.htm"><i class="fal fa-home-alt me-1"></i> Home</a>
+				</li>
+				<li class="nav-item" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Online Coding System">
+					<a class="nav-link" href="https://www.tutorialspoint.com/codingground.htm"><i class="fal fa-code me-1"></i> Coding Ground</a>
+				</li>
+				<li class="nav-item" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Job Openings">
+					<span><a class="nav-link" href="https://www.tutorialspoint.com/about/about_careers.htm"><i class="fal fa-suitcase me-1"></i> Jobs</a></span>
+				</li>
+				<li class="nav-item" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Digital Whiteboard">
+					<span><a class="nav-link" href="https://www.tutorialspoint.com/whiteboard.htm"><i class="fal fa-chalkboard me-1"></i> Whiteboard</a></span>
+				</li>
+				<li class="nav-item" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Developer&#39;s Tools">
+					<span><a class="nav-link" href="https://www.tutorialspoint.com/online_dev_tools.htm"><i class="fal fa-tools me-1"></i> Tools</a></span>
+				</li>
+				<li class="nav-item" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Corporate Trainings">
+					<span><a class="nav-link" href="https://www.tutorialspoint.com/business/index.asp"><i class="fal fa-analytics me-1"></i> Business</a></span>
+				</li>
+			</ul>
+			<!-- Navbar top Right-->
+			<div class="d-flex align-items-center justify-content-center">
+				<div class="navbar-nav ms-2">
+				  <div class="modeswitch-wrap" id="darkModeSwitch">
+					 <div class="modeswitch-item">
+						<div class="modeswitch-icon">
+							<i class="fal fa-sun toggle-sun"></i>
+							<i class="fal fa-moon toggle-moon"></i>
+						</div>
+					 </div>
+				  </div>
+				</div>
+				<div class="me-3c top-nav-social">
+				  <a class="nav-link" href="https://www.tutorialspoint.com/market/teach_with_us.jsp" target="_self" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Teach with us"><i class="fal fa-users-class me-2"></i> <span>Teach with us</span></a>
+				</div>
+				<ul class="list-unstyled d-flex mb-0 top-nav-social">
+					<li><a class="px-2 nav-link" rel="nofollow" href="https://www.facebook.com/tutorialspointindia" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Tutorialspoint Facebook"><i class="fab fa-facebook"></i></a> </li>
+					<li><a class="px-2 nav-link" rel="nofollow" href="https://www.instagram.com/tutorialspoint_/" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Tutorialspoint Instagram"><i class="fab fa-instagram"></i></a> </li>
+					<li><a class="px-2 nav-link" rel="nofollow" href="https://twitter.com/tutorialspoint" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Tutorialspoint Twitter"><i class="fab fa-twitter"></i></a> </li>
+					<li><a class="px-2 nav-link" rel="nofollow" href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Tutorialspoint Youtube"><i class="fab fa-youtube"></i></a> </li>
+					<li><a class="px-2 nav-link" rel="nofollow" href="https://www.linkedin.com/authwall?trk=bf&amp;trkInfo=AQEkqX2eckF__gAAAX-wMwEYvrsjBVbEtWQd4pgEdVSzkL22Nik1KEpY_ECWLKDGc41z8IOZWr2Bb0fvJplT60NPBtSw87J6QCpc7wD4qQ3iU13n6xJtBxME5o05Wmpg5JPm5YY=&amp;originalReferer=&amp;sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ftutorialspoint" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="Tutorialspoint LinkedIn"><i class="fab fa-linkedin-in"></i></a> </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header class="navbar-light navbar-sticky header-static">
+	<nav class="navbar navbar-expand-xl">
+		<div class="container-fluid px-3 px-xl-4">
+			<a class="navbar-brand" href="https://www.tutorialspoint.com/index.htm"><img class="light-mode-item navbar-brand-item" src="./JavaScript - Overview_files/logo-color.png" alt="logo"> <img class="dark-mode-item navbar-brand-item" src="./JavaScript - Overview_files/logo-color-b.png" alt="logo"></a>
+			<button class="navbar-toggler-toc collapsed ms-auto-toc" type="button" id="btn-tutorial-toc">
+                        <span><i class="fal fa-th-list"></i></span>
+			</button>
+			<button class="navbar-toggler ms-auto" type="button" id="btn-menu-collapse">
+				<span class="navbar-toggler-animation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</button>
+			<div class="navbar-collapse w-100 collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll me-auto">
+					<li class="nav-item nav-xs-login">
+						<a class="nav-link" href="https://www.tutorialspoint.com/javascript/javascript_overview.htm#"><i class="fal fa-sign-in-alt me-2"></i>Login</a>
+					</li>
+					<li class="nav-item dropdown dropdown-menu-shadow-stacked">
+						<a class="nav-link" id="categoryMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fal fa-th-list fs-5 me-xl-1 d-xl-none"></i>
+							<i class="fal fa-th me-1 d-none d-xl-inline-block"></i>
+							<span class="d-xl-inline-block">Category <i class="fal fa-angle-down"></i></span>
+						</a>
+												<ul class="dropdown-menu categories-menu shadow" id="categories-menu">
+							<li><a href="https://www.tutorialspoint.com/academic_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Academic Tutorials</a></li>
+							<li><a href="https://www.tutorialspoint.com/big_data_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Big Data &amp; Analytics </a></li>
+							<li><a href="https://www.tutorialspoint.com/computer_programming_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Computer Programming </a></li>
+							<li><a href="https://www.tutorialspoint.com/computer_science_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Computer Science </a></li>
+							<li><a href="https://www.tutorialspoint.com/database_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Databases </a></li>
+							<li><a href="https://www.tutorialspoint.com/devops_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> DevOps </a></li>
+							<li><a href="https://www.tutorialspoint.com/digital_marketing_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Digital Marketing </a></li>
+							<li><a href="https://www.tutorialspoint.com/engineering_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Engineering Tutorials </a></li>
+							<li><a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Exams Syllabus </a></li>
+							<li><a href="https://www.tutorialspoint.com/famous_monuments.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Famous Monuments </a></li>
+							<li><a href="https://www.tutorialspoint.com/gate_exams_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> GATE Exams </a></li>
+							<li><a href="https://www.tutorialspoint.com/latest_technologies.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Latest Technologies </a></li>
+							<li><a href="https://www.tutorialspoint.com/machine_learning_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Machine Learning </a></li>
+							<li><a href="https://www.tutorialspoint.com/mainframe_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Mainframe Development </a></li>
+							<li><a href="https://www.tutorialspoint.com/management_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Management Tutorials </a></li>
+							<li><a href="https://www.tutorialspoint.com/maths_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Mathematics Tutorials</a></li>
+							<li><a href="https://www.tutorialspoint.com/microsoft_technologies_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Microsoft Technologies </a></li>
+							<li><a href="https://www.tutorialspoint.com/misc_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Misc tutorials </a></li>
+							<li><a href="https://www.tutorialspoint.com/mobile_development_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Mobile Development </a></li>
+							<li><a href="https://www.tutorialspoint.com/java_technology_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Java Technologies </a></li>
+							<li><a href="https://www.tutorialspoint.com/python_technologies_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Python Technologies </a></li>
+							<li><a href="https://www.tutorialspoint.com/sap_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> SAP Tutorials </a></li>
+							<li><a href="https://www.tutorialspoint.com/scripting_lnaguage_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Programming Scripts </a></li>
+							<li><a href="https://www.tutorialspoint.com/selected_reading.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Selected Reading </a></li>
+							<li><a href="https://www.tutorialspoint.com/software_quality_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Software Quality </a></li>
+							<li><a href="https://www.tutorialspoint.com/soft_skill_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Soft Skills </a></li>
+							<li><a href="https://www.tutorialspoint.com/telecom_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Telecom Tutorials </a></li>
+							<li><a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> UPSC IAS Exams </a></li>
+							<li><a href="https://www.tutorialspoint.com/web_development_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Web Development </a></li>
+							<li><a href="https://www.tutorialspoint.com/sports_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Sports Tutorials </a></li>
+							<li><a href="https://www.tutorialspoint.com/xml_technologies_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> XML Technologies </a></li>
+							<li><a href="https://www.tutorialspoint.com/multi_language_tutorials.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Multi-Language</a></li>
+							<li><a href="https://www.tutorialspoint.com/questions_and_answers.htm" class="dropdown-item"><i class="fal fa-angle-right"></i> Interview Questions</a></li>
+						</ul>
+											</li>
+				</ul>
+				<div class="navbar-collapse">
+					<div class="col-xl-9">
+						<div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+							<div class="nav-item w-100">
+								<form class="rounded position-relative">
+									<input class="form-control pe-4 bg-secondary bg-opacity-10 border-0 search-strings" type="search" placeholder="Search tutorials ..." id="search-strings" name="key" data-result="search-results" aria-label="Search">
+									<button type="button" id="btnSearch" class="btn bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y"><i class="fal fa-search fs-6"></i></button>
+									<div class="search-box search-box-inn" id="search-results"></div>
+									<div class="clear"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="navbar-nav navbar-nav-scroll">
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.tutorialspoint.com/latest/prime-packs" target="_self"><i class="fal fa-cubes me-1"></i>Prime Packs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.tutorialspoint.com/market/index.asp" target="_self"><i class="fal fa-play-circle me-1"></i>Courses</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.tutorialspoint.com/latest/ebooks" target="_self"><i class="fal fa-book-reader me-1"></i>eBooks</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.tutorialspoint.com/tutorialslibrary.htm" target="_self"><i class="fal fa-books me-1"></i>Library</a>
+					</li>
+					<li class="nav-item">
+					        <a class="nav-link" href="https://www.tutorialspoint.com/questions/index.php" target="_self"><i class="fal fa-comments-alt me-1"></i> Q/A</a>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar-nav d-lg-inline-block nav-login">
+			   <a href="https://www.tutorialspoint.com/market/login.asp" class="btn btn-grey-border mb-0"><i class="fal fa-sign-in-alt me-2"></i>Login</a>
+			</div>
+		</div>
+	</nav>
+</header><div id="sticky-space" class="" style="height: 0px;"></div>
+<main class="bg-light pb-4">
+<div class="container-fluid mt-3 px-3 px-xl-3">
+<div class="row g-4">
+<div class="col-sm-12 col-md-4 col-xl-3 ps-0 pe-0 collapse tutorial-toc" id="tocCollapse">
+<div class="card card-body bg-light pt-0">
+<div class="mini-logo">
+<img src="./JavaScript - Overview_files/javascript-mini-logo.jpg" alt="Javascript Tutorial">
+</div>
+<ul class="toc chapters">
+<li><a class="videolink" href="https://www.tutorialspoint.com/javascript_online_training/index.asp" target="_blank"><img src="./JavaScript - Overview_files/javascript-video-tutorials.jpg" alt="JavaScript Video Tutorials"></a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Javascript Basics Tutorial</li>
+<li><a href="https://www.tutorialspoint.com/javascript/index.htm">Javascript - Home</a></li>
+<li class="current-chapter"><a href="https://www.tutorialspoint.com/javascript/javascript_overview.htm">Javascript - Overview</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_syntax.htm">Javascript - Syntax</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_enabling.htm">Javascript - Enabling</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_placement.htm">Javascript - Placement</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_variables.htm">Javascript - Variables</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_operators.htm">Javascript - Operators</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_ifelse.htm">Javascript - If...Else</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_switch_case.htm">Javascript - Switch Case</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_while_loop.htm">Javascript - While Loop</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_for_loop.htm">Javascript - For Loop</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_forin_loop.htm">Javascript - For...in</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_loop_control.htm">Javascript - Loop Control</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_functions.htm">Javascript - Functions</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_events.htm">Javascript - Events</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_cookies.htm">Javascript - Cookies</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_page_redirect.htm">Javascript - Page Redirect</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_dialog_boxes.htm">Javascript - Dialog Boxes</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_void_keyword.htm">Javascript - Void Keyword</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_page_printing.htm">Javascript - Page Printing</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">JavaScript Objects</li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_objects.htm">Javascript - Objects</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_number_object.htm">Javascript - Number</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_boolean_object.htm">Javascript - Boolean</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_strings_object.htm">Javascript - Strings</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_arrays_object.htm">Javascript - Arrays</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_date_object.htm">Javascript - Date</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_math_object.htm">Javascript - Math</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_regexp_object.htm">Javascript - RegExp</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_html_dom.htm">Javascript - HTML DOM</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">JavaScript Advanced</li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_error_handling.htm">Javascript - Error Handling</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_form_validations.htm">Javascript - Validations</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_animation.htm">Javascript - Animation</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_multimedia.htm">Javascript - Multimedia</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_debugging.htm">Javascript - Debugging</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_image_map.htm">Javascript - Image Map</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_browsers_handling.htm">Javascript - Browsers</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">JavaScript Useful Resources</li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_questions_answers.htm">Javascript - Questions And Answers</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_quick_guide.htm">Javascript - Quick Guide</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm">Javascript - Functions</a></li>
+<li><a href="https://www.tutorialspoint.com/javascript/javascript_useful_resources.htm">Javascript - Resources</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="https://www.tutorialspoint.com/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div id="stickyparent" class="d-none d-sm-block" style="position: sticky;">
+<div style="height:250px;width:300px;" id="sticky-ad">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+
+<!-- Tutorial Content Starts Here -->
+<div class="col-sm-12 col-md-8 col-xl-6 rounded-3 tutorial-content" id="mainContent">
+<h1>JavaScript - Overview</h1>
+<hr>
+<div id="google-top-ads">
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center" class="google-top-ads">
+<div id="adp_top_ads" style="text-align:center!important;min-height:90px!important"><div id="8014640d-fd34-4b2e-9b1b-cc67234a2325" class="_ap_apex_ad"></div></div>
+<script>
+     var adPos = document.getElementById('adp_top_ads');
+     var ad_id_720 = "8014640d-fd34-4b2e-9b1b-cc67234a2325";
+     var ad_id_650 = "2d1bb2c4-eb72-471d-9c80-1bf5514728c1";
+     var ad_id_300 = "75e8929b-e21c-41ad-bca5-5cb2601dc07b";
+     var width = window.innerWidth;
+     var ad_id = ad_id_720;
+     if( width <= 768 ){
+        ad_id =  ad_id_300;
+     }else if( width <= 1435 ){
+        ad_id =  ad_id_650;
+     }
+     adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+     var adpushup = adpushup || {};
+     adpushup.que = adpushup.que || [];
+     adpushup.que.push(function() {
+     adpushup.triggerAd(ad_id);
+     });
+</script>
+</div>
+</div>
+<br>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="https://www.tutorialspoint.com/javascript/index.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="https://www.tutorialspoint.com/javascript/javascript_syntax.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<h2>What is JavaScript ?</h2>
+<p>JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.</p>
+<p>JavaScript was first known as <b>LiveScript,</b> but Netscape changed its name to JavaScript, possibly because of the excitement being generated by Java. JavaScript made its first appearance in Netscape 2.0 in 1995 with the name <b>LiveScript</b>. The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers.</p>
+<p>The <a rel="nofollow" href="http://www.ecma-international.org/publications/index.html" target="_blank">ECMA-262 Specification</a> defined a standard version of the core JavaScript language.</p>
+<ul class="list">
+<li>JavaScript is a lightweight, interpreted programming language.</li>
+<li>Designed for creating network-centric applications.</li>
+<li>Complementary to and integrated with Java.</li>
+<li>Complementary to and integrated with HTML.</li>
+<li>Open and cross-platform</li>
+</ul>
+<h2>Client-Side JavaScript</h2>
+<p>Client-side JavaScript is the most common form of the language. The script should be included in or referenced by an HTML document for the code to be interpreted by the browser.</p>
+<p>It means that a web page need not be a static HTML, but can include programs that interact with the user, control the browser, and dynamically create HTML content.</p>
+<p>The JavaScript client-side mechanism provides many advantages over traditional CGI server-side scripts. For example, you might use JavaScript to check if the user has entered a valid e-mail address in a form field.</p>
+<p>The JavaScript code is executed when the user submits the form, and only if all the entries are valid, they would be submitted to the Web Server.</p>
+<p>JavaScript can be used to trap user-initiated events such as button clicks, link navigation, and other actions that the user initiates explicitly or implicitly.</p>
+<h2>Advantages of JavaScript</h2>
+<p>The merits of using JavaScript are −</p>
+<ul class="list">
+<li><p><b>Less server interaction</b> − You can validate user input before sending the page off to the server. This saves server traffic, which means less load on your server.</p></li>
+<li><p><b>Immediate feedback to the visitors</b> − They don't have to wait for a page reload to see if they have forgotten to enter something.</p></li>
+<li><p><b>Increased interactivity</b> − You can create interfaces that react when the user hovers over them with a mouse or activates them via the keyboard.</p></li>
+<li><p><b>Richer interfaces</b> − You can use JavaScript to include such items as drag-and-drop components and sliders to give a Rich Interface to your site visitors.</p></li>
+</ul>
+<h2>Limitations of JavaScript</h2>
+<p>We cannot treat JavaScript as a full-fledged programming language. It lacks the following important features −</p>
+<ul class="list">
+<li><p>Client-side JavaScript does not allow the reading or writing of files. This has been kept for security reason.</p></li>
+<li><p>JavaScript cannot be used for networking applications because there is no such support available.</p></li>
+<li><p>JavaScript doesn't have any multi-threading or multiprocessor capabilities.</p></li>
+</ul>
+<p>Once again, JavaScript is a lightweight, interpreted programming language that allows you to build interactivity into otherwise static HTML pages.</p>
+<h2>JavaScript Development Tools</h2>
+<p>One of major strengths of JavaScript is that it does not require expensive development tools. You can start with a simple text editor such as Notepad. Since it is an interpreted language inside the context of a web browser, you don't even need to buy a compiler.</p>
+<p>To make our life simpler, various vendors have come up with very nice JavaScript editing tools. Some of them are listed here −</p>
+<ul class="list">
+<li><p><b>Microsoft FrontPage</b> − Microsoft has developed a popular HTML editor called FrontPage. FrontPage also provides web developers with a number of JavaScript tools to assist in the creation of interactive websites.</p></li>
+<li><p><b>Macromedia Dreamweaver MX</b> − Macromedia Dreamweaver MX is a very popular HTML and JavaScript editor in the professional web development crowd. It provides several handy prebuilt JavaScript components, integrates well with databases, and conforms to new standards such as XHTML and XML.</p></li>
+<li><p><b>Macromedia HomeSite 5</b> − HomeSite 5 is a well-liked HTML and JavaScript editor from Macromedia that can be used to manage personal websites effectively.</p></li>
+</ul>
+<h2>Where  is JavaScript Today ?</h2>
+<p>The ECMAScript Edition 5 standard will be the first update to be released in over four years. JavaScript 2.0 conforms to Edition 5 of the ECMAScript standard, and the difference between the two is extremely minor.</p>
+<p>The specification for JavaScript 2.0 can be found on the following site: <a rel="nofollow" href="http://www.ecmascript.org/" target="_blank">http://www.ecmascript.org/</a></p>
+<p>Today, Netscape's JavaScript and Microsoft's JScript conform to the ECMAScript standard, although both the languages still support the features that are not a part of the standard.</p>
+<div class="d-flex justify-content-between border-bottom border-top py-2" id="bottom_navigation">
+<a href="https://www.tutorialspoint.com/javascript/index.htm" class="pre-btn"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a id="print-page" href="https://www.tutorialspoint.com/javascript/javascript_overview.htm#" class="pre-btn d-none d-sm-block"><i class="fal fa-print"></i> Print Page</a>
+<a href="https://www.tutorialspoint.com/javascript/javascript_syntax.htm" class="nxt-btn">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+			<div class="google-bottom-ads" id="google-bottom-ads">
+				<div>Advertisements</div>
+				<div>
+					<div id="adp_bottom_ads"></div>
+					<script>
+						var adPos = document.getElementById('adp_bottom_ads');
+						var mobile_ad_id = "6d621d7e-9531-4f26-810f-68af67dc6366";
+						var desktop_ad_id = "4951d1d6-24d4-4a31-afb7-2c22c489eae1";
+						var adpushup = adpushup || {};
+						adpushup.que = adpushup.que || [];
+						adpushup.que.push(function() {
+							var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+							adPos.innerHTML = '<div id="' + ad_id + '" class="_ap_apex_ad"></div>';
+							adpushup.triggerAd(ad_id);
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	<!-- Tutorial Content Ends Here -->
+
+	<!-- Right Column Starts Here -->
+	<div class="col-sm-6 col-md-3 col-xl-3" id="google-right-ads">
+		<div class="data-sticky">
+			<div class="google-right-ad" style="margin: 0px auto !important;margin-top:5px;min-height:250px!important">
+				<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+					<script>
+						if( window.innerWidth > 768 ){
+						   var adpushup = adpushup || {};
+						   adpushup.que = adpushup.que || [];
+						   adpushup.que.push(function() {
+						   adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+						   });
+						}
+					</script>
+				</div>
+			</div>
+			<div class="google-right-ad" style="margin-top:16px;min-height:250px!important">
+				<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+					<script>
+						if( window.innerWidth > 768 ){
+						   var adpushup = adpushup || {};
+						   adpushup.que = adpushup.que || [];
+						   adpushup.que.push(function() {
+						   adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+						   });
+						}
+					</script>
+				</div>
+			</div>
+			<div class="google-right-ad" style="margin-top:16px;margin-bottom:15px;min-height:600px!important">
+				<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+					<script>
+						if( window.innerWidth > 768 ){
+						   var adpushup = adpushup || {};
+						   adpushup.que = adpushup.que || [];
+						   adpushup.que.push(function() {
+						   adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+						   });
+						}
+					</script>
+				</div>
+			</div>
+			<!-- Right Column Ends Here -->
+		</div>
+	</div>
+</div>
+</div>
+</main>
+
+<footer class="py-3 card navbar-dark border-top" id="footer">
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-lg-12 text-center">
+				<a class="me-0 pb-4" href="https://www.tutorialspoint.com/">
+					<img class="light-mode-item h-100px" src="./JavaScript - Overview_files/logo-color-footer.png" alt="Tutorials Point">
+					<img class="dark-mode-item h-100px" src="./JavaScript - Overview_files/logo-footer-b.png" alt="Tutorials Point">
+				</a>
+				<ul class="nav justify-content-center py-3 mt-md-0 ">
+					<li class="nav-item"><a class="nav-link fw-bold" href="https://www.tutorialspoint.com/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+					<li class="nav-item"><a class="nav-link fw-bold" href="https://www.tutorialspoint.com/about/return_refund_policy.htm"> <i class="fal fa-check"></i> Refund Policy</a></li>
+					<li class="nav-item"><a class="nav-link fw-bold" href="https://www.tutorialspoint.com/about/about_terms_of_use.htm"><i class="fal fa-check"></i> Terms of use</a></li>
+					<li class="nav-item"><a class="nav-link fw-bold" href="https://www.tutorialspoint.com/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+					<li class="nav-item"><a class="nav-link fw-bold" href="https://www.tutorialspoint.com/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+					<li class="nav-item"><a class="nav-link fw-bold" href="https://www.tutorialspoint.com/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+				</ul>
+				<p class="small">© Copyright 2022. All Rights Reserved.</p>
+			</div>
+			<div id="privacy-banner" style="display: inherit;">
+				<div>
+					<p>We make use of cookies to improve our user experience. By using this website, you agree with our Cookies Policy.
+						<a id="banner-accept" href="https://www.tutorialspoint.com/javascript/javascript_overview.htm#">Agree</a>
+						<a id="banner-learn" href="https://www.tutorialspoint.com/about/about_cookies.htm" target="_blank">Learn more</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="back-top">
+<i class="fal fa-angle-up position-absolute top-50 start-50 translate-middle"></i>
+</div>
+<script src="./JavaScript - Overview_files/script-min.js.download"></script>
+<script async="" src="./JavaScript - Overview_files/js(1)"></script>
+<script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'UA-232293-6');
+</script>
+
+
+</body></html>
