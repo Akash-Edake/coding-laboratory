@@ -1,0 +1,166 @@
+                            /* For header Content */
+                            
+                            @media only screen and (min-width: 320px) and (max-width: 425px) {
+                                .left-header {
+                                    font-size: 0.8rem;
+                                    display: flex;
+                                }
+                                .right-header {
+                                    padding: 1px;
+                                    align-items: flex-end;
+                                }
+                                #nav-wrap .main-menu .nav-img img {
+                                    padding: 10px 0;
+                                    margin-right: -5rem;
+                                    margin-top: -17px;
+                                }
+                                .navbar-collapse {
+                                    margin-top: -17px;
+                                    padding: 10px 0;
+                                }
+                                #slider-wrap {
+                                    position: relative;
+                                }
+                                .slider-text-wrap h1 {
+                                    font-size: 2rem;
+                                    font-weight: 800;
+                                    margin-left: 1rem;
+                                }
+                                .carousel-item img {
+                                    height: 30rem;
+                                    position: relative;
+                                }
+                                .slider-text-wrap {
+                                    margin-top: 3rem;
+                                }
+                                .btn-cust-style {
+                                    padding: 0;
+                                    font-weight: 500;
+                                    font-size: 1rem;
+                                    margin-right: 0.5rem;
+                                    margin-left: 2rem;
+                                }
+                                .right-btn {
+                                    padding: 0.5rem 0.2rem;
+                                    margin-right: 0.5rem;
+                                }
+                                .up-event-wrap {
+                                    width: 100%;
+                                    margin-top: 2rem;
+                                    position: relative;
+                                    transform: translate(13px, 10px);
+                                }
+                                .upcoming-event {
+                                    width: 319px;
+                                    padding: 10px;
+                                    transform: scale(0.5);
+                                }
+                                .abt-main {
+                                    margin-top: 1rem;
+                                    position: relative;
+                                    text-align: justify;
+                                    margin-bottom: 0px;
+                                }
+                                .abt-content {
+                                    padding: 0.5rem;
+                                    border: 11px solid #dbe5f3;
+                                    margin-top: 2rem;
+                                }
+                                .abt-text-data {
+                                    margin-left: 0rem;
+                                    margin-top: 10rem;
+                                }
+                                .abt-text-data h1 {
+                                    transform: translate(50px, -160px);
+                                }
+                                .abt-btn {
+                                    margin-left: 0;
+                                }
+                                .title-wrap-abt {
+                                    transform: translate(17px, -783px);
+                                }
+                                .img-thumb {
+                                    transform: translate(17px, -766px);
+                                    width: 71vw;
+                                    margin-top: 3rem;
+                                    margin-left: 1rem;
+                                }
+                                .mission-title {
+                                    z-index: 1;
+                                    transform: translate(15px, -193px);
+                                }
+                                #page-title-contactUs {
+                                    background: rgba(0, 0, 0, 0.8) url(/uniAlumini/assets/images/contact-us.jpg);
+                                    padding: 200px 0px;
+                                }
+                                .small-respo {
+                                    display: none;
+                                }
+                            }
+                            
+                            @media only screen and (width: 425px) {
+                                .img-thumb {
+                                    transform: translate(52px, -654px);
+                                    width: 59vw;
+                                }
+                            }
+                            
+                            @media only screen and (min-width: 768px) and (max-width: 992px) {
+                                .slider-text-wrap h1 {
+                                    font-size: 2rem;
+                                    margin-top: -5rem;
+                                }
+                                .carousel-item img {
+                                    height: 25rem;
+                                }
+                                .up-event-wrap {
+                                    transform: translate(101px, -141px);
+                                }
+                                .figure {
+                                    display: block;
+                                }
+                                .abt-content {
+                                    margin-top: 47rem;
+                                    width: 87%;
+                                }
+                                .up-event-wrap {
+                                    transform: translate(96px, 11px);
+                                }
+                                .img-thumb {
+                                    transform: translate(-137px, -614px);
+                                    width: 51vw;
+                                }
+                                .upcoming-event {
+                                    transform: translate(229px, -27px);
+                                    width: 297px;
+                                    padding: 18px;
+                                    margin-block-end: 1rem;
+                                }
+                                .abt-main {
+                                    margin-top: 4rem;
+                                }
+                            }
+                            
+                            @media only screen and (width: 1024px) {
+                                .up-event-wrap {
+                                    position: absolute;
+                                    transform: translate(123px, -145px);
+                                }
+                                .upcoming-event {
+                                    transform: translate(482px, -37px);
+                                }
+                                .img-thumb {
+                                    transform: translate(-196px, -487px);
+                                    width: 43vw;
+                                }
+                            }
+                            
+                            @media only screen and (max-width: 600px) {
+                                #head-content .header_content .btn-auth {
+                                    padding: 0px 17px;
+                                    font-size: 1rem;
+                                    line-height: 1.88rem;
+                                    margin: 1px;
+                                    text-align: center;
+                                }
+                            }

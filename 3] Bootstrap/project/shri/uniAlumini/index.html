@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <title>Uni Alumini</title>
+</head>
+
+<body>
+
+    <header>
+        <section id="head-content">
+            <div class="header_content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-xl-6 col-md-6 col-12">
+                            <div class="left-header text-white py-3 text-size">
+                                <strong>Email:</strong>
+                                <a href="mailto:info@construct.com" class="text-white me-3 text-decoration-none custome-text-mail">info@construct.com</a>
+                                <strong>Hotline:</strong>
+                                <a href="tel:+8804545477" class="text-white text-decoration-none">8804545477</a>
+                            </div>
+                        </div>
+                        <!-- Buttons login And Signup -->
+                        <div class="col-lg-6 col-sm-12 col-xl-6 col-md-6 col-12 text-right">
+                            <div class="right-header d-flex justify-content-end me-2 text-size">
+                                <a href="#" class=" btn-auth bg-primary btn-cust-style-head text-white text-decoration-none" data-toggle="modal" data-target="#loginForm">Login</a>
+                                <a href="#" class="btn-auth bg-success btn-cust-style-head text-white ms-3 text-decoration-none" data-toggle="modal" data-target="#signupForm">Signup</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal login-->
+            <div class="modal fade" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content bg-warning">
+                        <div class="modal-header m-auto">
+                            <h5 class="modal-title fs-4 fw-bold" id="loginModal">Login Here</h5>
+                        </div>
+                        <div class="modal-body fw-bold">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="log-email">Email address</label>
+                                    <input type="email" class="form-control" id="log-email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="log-Password">Password</label>
+                                    <input type="password" class="form-control" id="log-Password" placeholder="Password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                                <button type="button" class="btn btn-secondary mt-3" data-dismiss="modal">Cancel</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal signup -->
+            <div class="modal fade" id="signupForm" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content text-white fs-6">
+                        <div class="modal-header m-auto">
+                            <h5 class="modal-title fs-4 fw-bold" id="signupModal">Registration Form</h5>
+                        </div>
+                        <div class="modal-body fw-bold">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="name">Gender</label>
+                                    <input type="radio" name="gender" id="male">male
+                                    <input type="radio" name="gender" id="female">Female
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="branch">Education</label>
+                                    <select name="branch" class="form-control" id="branch">
+                                    <option value="cs">Computer Science</option>
+                                    <option value="ETC">Electronics</option>
+                                    <option value="auto">Automobile</option>
+                                    <option value="mech">Mechanical</option>
+                                </select>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label for="email-id">Email address</label>
+                                    <input type="email" class="form-control" id="email-id-1" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pass">Password</label>
+                                    <input type="password" class="form-control" id="pass-1" placeholder="Enter your Password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                                <button type="button" class="btn btn-secondary mt-3" data-dismiss="modal">Cancel</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <nav class="position-sticky fixed-top bg-white">
+        <section id="nav-wrap">
+            <div class="main-menu">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <nav class="navbar navbar-light">
+                                <a class="navbar-brand nav-img" href="index.html">
+                                    <img src="assets/images/unialumini.png" alt="" class="img-fluid">
+                                </a>
+
+                            </nav>
+                        </div>
+                        <div class="col-8">
+                            <nav class="navbar navbar-expand-lg navbar-light">
+                                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                                <div class="collapse navbar-collapse fs-5 fw-bold py-2" id="navbarNavDropdown">
+                                    <ul class="navbar-nav nav-text-wrap">
+                                        <li class="nav-item active me-3">
+                                            <a class="nav-link" href="#">Home<span class="sr-only"></span></a>
+                                        </li>
+                                        <li class="nav-item me-3">
+                                            <a class="nav-link" href="#abt-wrap">About</a>
+                                        </li>
+                                        <li class="nav-item me-3">
+                                            <a class="nav-link" href="#">Event</a>
+                                        </li>
+                                        <li class="nav-item me-3">
+                                            <a class="nav-link" href="#gallery-data">Gallery</a>
+                                        </li>
+                                        <li class="nav-item dropdown me-3">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-hover="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Blog
+                                    </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown me-3">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item me-3">
+                                            <a class="nav-link" href="contact-us.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <!-- Slider window -->
+    <section id="slider-wrap">
+        <div class="container_fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12">
+                    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner bg-dark">
+                            <div class="carousel-item active">
+                                <img src="assets/images/slider-img-3.jpg" class="img-fluid w-100 img-custom" alt="First Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/gellary-img-4.jpg" class="img-fluid w-100 img-custom" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/slider-img-2.jpg" class="img-fluid w-100 img-custom" alt="Third slide">
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <div class="carousel-item active">
+                                <div class="card-img-overlay slider-text-wrap">
+                                    <div class="container ">
+                                        <div class="row ">
+                                            <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12 ">
+
+                                                <h1 class="display-1 fw-bolder">We Are Not Proud</h1>
+                                                <h2 class="py-3 ">Student of <span class="text-warning ">Oxfornt
+                                            University</span></h2>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci repellat magni, quibusdam delectus consequatur ipsa dolor earum doloremque alias? Neque.</p>
+                                                <a href="#abt-wrap" class="btn right-btn">Our Mission</a>
+                                                <a href="# " class="btn right-btn">Our Story</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="card-img-overlay slider-text-wrap">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-1 d-lg-block small-respo">
+                                                <a href="https://www.facebook.com/" target="_blank ">
+                                                    <i class="fa-2x fa-brands fa-facebook-square me-3 text-white py-4"></i>
+                                                </a>
+                                                <a href="https://twitter.com/ " target="_blank ">
+                                                    <i class="fa-2x fa-brands fa-twitter-square me-3 text-white py-4"></i>
+                                                </a>
+                                                <a href="https://www.linkedin.com/" target="_blank ">
+                                                    <i class="fa-2x fa-brands fa-linkedin me-3 text-white py-4"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="up-event-wrap pb-2 ">
+                                <div class="upcoming-event ">
+                                    <span>Upcoming Event</span>
+                                </div>
+                                <div class="container ">
+                                    <div class="row ">
+                                        <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 ">
+                                            <figure class="figure">
+                                                <img src="assets/images/event-img-1.jpg " class="figure-img event-img img-fluid w-100 " alt="image card. ">
+                                                <figcaption class="figure-caption text-dark bg-white fs-5 fw-bold text-center py-3 ">It's 28 March 2022</figcaption>
+                                            </figure>
+                                        </div>
+
+                                        <div class="col-lg-7 col-xl-7 col-md-12 col-sm-12 ">
+                                            <table class="event-tab-data">
+                                                <tr>
+                                                    <th>Days</th>
+                                                    <th>Hr</th>
+                                                    <th>Min</th>
+                                                    <th>Sec</th>
+                                                </tr>
+                                                <tr class="align-style text-white">
+                                                    <td id="day"></td>
+                                                    <td id="hour"></td>
+                                                    <td id="minute"></td>
+                                                    <td id="second"></td>
+                                                    <td>Remaining</td>
+                                                </tr>
+
+                                            </table>
+
+                                            <div class="text-white py-3 ">
+                                                <h1 class="fs-3 ">We are going to arrange a get together!</h1>
+                                                <p class="py-2 ">hello everybody Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque nam fugiat sit dolor aliquam recusandae similique beatae itaque perspiciatis expedita?</p>
+                                                <button class="join-us-btn text-white fw-bold fs-5 py-3 px-4 ">JOIN WITH US</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    </section>
+    <!-- Sticky Icon-->
+    <section id="setting-icon" class="position-sticky fixed-top">
+        <div class="icon-setting ">
+            <i class="fa-solid fa-gear animate__animated animate__rotateIn cust-icon position-sticky"></i>
+        </div>
+    </section>
+    <!--Our Mission Content -->
+    <section id="abt-wrap">
+        <div class="container ">
+            <div class="row ">
+                <div class="abt-main ">
+                    <div class="col-lg-10 offset-md-2 col-sm-12 col-md-12 ">
+                        <div class="abt-content">
+                            <div class="abt-text-data ">
+                                <h1 class="fw-bolder display-5">Our Misssion</h1>
+                                <p class="mt-4">There are many company Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim ad minim veniam, quis csetur adipicing elit, sed do eiusmod tempor dncint ut labore
+                                    et dolore magna alis enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                <p>There are many company Lorem ipsm dolor sitg amet, csetur adipicing elit, sed do eiusmod tempor dncint ut labore et dolore magna alis enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+                                <div class="abt-btn ">
+                                    <button class="py-3 px-4 mt-3 join-us-btn text-white fw-bold fs-4 ">Know
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="img-thumb ">
+                                <img src="assets/images/about-bg.jpg " class="img-fluid " alt="image1 ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Our Responsibility -->
+    <section id="our-respo ">
+        <div class="container ">
+            <div class="respo-wrap ">
+                <div class="row ">
+                    <div class="col-12 ">
+                        <div class="title-respo text-center ">
+                            <h1>Our Responsibility</h1>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="img-wraper ">
+                <div class="row ">
+
+                    <div class="col-lg-6 col-xl-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card custom-card-bg ">
+                            <img src="assets/images/01.png " class="img-fluid card-img-top img-w-cust" alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Scholarship</h5>
+                                <p class="card-text ">De create building thinking about your requirment and latest treand on our marketplace area</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card custom-card-bg ">
+                            <img src="assets/images/02.png " class="img-fluid card-img-top img-w-cust " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Help Current Students</h5>
+                                <p class="card-text ">De create building thinking about your requirment and latest treand on our marketplace area</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card custom-card-bg ">
+                            <img src="assets/images/03.png " class="img-fluid card-img-top img-w-cust " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Help Our University</h5>
+                                <p class="card-text ">De create building thinking about your requirment and latest treand on our marketplace area</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card custom-card-bg ">
+                            <img src="assets/images/04.png " class="img-fluid card-img-top img-w-cust " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Build Our Community</h5>
+                                <p class="card-text ">De create building thinking about your requirment and latest treand on our marketplace area</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <!-- Ranging data-->
+    <section id="ranging ">
+        <div class="ranging-wrap">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col-lg-6 col-xl-3 col-md-6 col-sm-12 col-12 ">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p>4025</p>
+                        <p>Members</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 col-md-6 col-sm-12 col-12 ">
+                        <i class="fa-solid fa-image "></i>
+                        <p>8725</p>
+                        <p>Photos</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 col-md-6 col-sm-12 col-12 ">
+                        <i class="fa-solid fa-calendar"></i>
+                        <p>231+</p>
+                        <p>Events</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-3 col-md-6 col-sm-12 col-12 ">
+                        <i class="fa-solid fa-award "></i>
+                        <p>32+</p>
+                        <p>Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- recent job -->
+    <section id="Recent ">
+        <div class="recent-job ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-12 ">
+                        <div class="title-job py-5 mt-4 text-center ">
+                            <h1>Recent Job</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-job-card py-2 ">
+                    <div class="row ">
+                        <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4 col-12 ">
+                            <div class="card py-2 mt-4 ">
+                                <img src="assets/images/compnay-logo-1.png " class="card-img-top " alt="... ">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title ">Urgently Need Five Data Center Specialist</h5>
+                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="# " class="btn btn-primary ">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4 col-12 ">
+                            <div class="card py-2 mt-4 ">
+                                <img src="assets/images/compnay-logo-2.png " class="card-img-top " alt="... ">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title ">Product Owner (m/f) for our Charter Business</h5>
+                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="# " class="btn btn-primary ">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4 col-12 ">
+                            <div class="card py-2 mt-4 ">
+                                <img src="assets/images/compnay-logo-3.png " class="card-img-top " alt="... ">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title " text-center>Backend Developer (Java) (m/f) wanted for leading
+                                    </h5>
+                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="# " class="btn btn-primary ">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4 col-12 ">
+                            <div class="card py-2 mt-4 ">
+                                <img src="assets/images/compnay-logo-4.png " class="card-img-top " alt="... ">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title ">API Architect and Lead - Python, SQLAlchemy</h5>
+                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="# " class="btn btn-primary ">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4 col-12 ">
+                            <div class="card py-2 mt-4 ">
+                                <img src="assets/images/compnay-logo-1.png " class="card-img-top " alt="... ">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title ">Remotely - Javascript Developer Node.js</h5>
+                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="# " class="btn btn-primary ">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4 col-12 ">
+                            <div class="card py-2 mt-4 ">
+                                <img src="assets/images/compnay-logo-2.png " class="card-img-top " alt="... ">
+                                <div class="card-body text-center ">
+                                    <h5 class="card-title ">Five Years Experience Data Center Specialist Needed</h5>
+                                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="# " class="btn btn-primary ">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-12 text-center ">
+                            <button class="all-job-btn ">All Job List</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Our gallary -->
+    <section id="gallery-data">
+        <div class="gallery-wrap">
+            <div class="container ">
+                <div class="gallery-title text-center ">
+                    <div class="row ">
+                        <div class="col-12 mb-5 pt-5 ">
+                            <h1>Our Gallery</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallary-menu text-center">
+                    <div class="row ">
+                        <div class="col-12">
+                            <div class="nav d-flex nav-pills justify-content-center me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="gallery-btn" id="v-pills-all-tab" data-bs-toggle="pill" data-bs-target="#v-pills-all" type="button" role="tab" aria-controls="v-pills-all" aria-selected="true">All</button>
+                                <button class="gallery-btn" id="v-pills-memories-tab" data-bs-toggle="pill" data-bs-target="#v-pills-memories" type="button" role="tab" aria-controls="v-pills-memories" aria-selected="false">Old Memories</button>
+                                <button class="gallery-btn" id="v-pills-event-gallery-tab" data-bs-toggle="pill" data-bs-target="#v-pills-event" type="button" role="tab" aria-controls="v-pills-event" aria-selected="false">Event</button>
+                                <button class="gallery-btn" id="v-pills-our-picnic-tab" data-bs-toggle="pill" data-bs-target="#v-pills-picnic" type="button" role="tab" aria-controls="v-pills-picnic" aria-selected="false">Our picnic</button>
+                                <button class="gallery-btn" id="v-pills-recent-gallery-tab" data-bs-toggle="pill" data-bs-target="#v-pills-recent" type="button" role="tab" aria-controls="v-pills-recent" aria-selected="false">recent</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-image-wrap">
+                        <div class="row">
+                            <div class="col-12 mx-auto">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-all" role="tabpanel" aria-labelledby="v-pills-all-tab">
+                                        <div class="row">
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12">
+                                                <img src="assets/images/gellary-img-4.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/gellary-img-5.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/gellary-img-6.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/gellary-img-8.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/about-bg.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/event-img-2.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/slider-img1.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 recent">
+                                                <img src="assets/images/about-bg.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/event-img-2.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-memories" role="tabpanel" aria-labelledby="v-pills-memories-tab">
+                                        <div class="row">
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12">
+                                                <img src="assets/images/gellary-img-4.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/gellary-img-5.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/gellary-img-6.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/gellary-img-8.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-event" role="tabpanel" aria-labelledby="v-pills-event-gallery-tab">
+                                        <div class="row">
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 recent">
+                                                <img src="assets/images/about-bg.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/event-img-2.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-picnic" role="tabpanel" aria-labelledby="v-pills-our-picnic-tab">
+                                        <div class="row">
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/gellary-img-4.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/gellary-img-5.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/gellary-img-6.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/gellary-img-8.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-recent" role="tabpanel" aria-labelledby="v-pills-recent-gallery-tab">
+                                        <div class="row" id="recent-gallery">
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/about-bg.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/event-img-2.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                                <img src="assets/images/slider-img1.jpg " class="mt-3 img-fluid" alt=" ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section id="get-in-touch">
+            <div class="footer-wrap">
+                <div class="container">
+                    <div class="touch-data-wrap mt-4 text-white py-5 ">
+                        <div class="row ">
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-logo mt-2 ">
+                                    <img src="assets/images/footer-logo.png " alt=" ">
+                                </div>
+                                <div class="footer-body mt-2 ">
+                                    <p>we are Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere incidunt, aliquid pariatur quis atque porro.</p>
+                                </div>
+                                <div class="contact-info mt-2 ">
+                                    <a href="tel:+8745454442 " class="text-decoration-none fw-bold text-white ">Phone:+8745454442</a>
+                                    <a href="tel: +88474 156 362 " class="text-decoration-none fw-bold text-white "> Fax:
+                                    +88474 156 362</a>
+                                    <a href="mailto:demoemail@demo.com " class="text-decoration-none fw-bold text-white ">Email: demoemail@demo.com</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="title-wrap pt-2 ">
+                                    <h2>Get In Touch</h2>
+                                </div>
+                                <div class="body-wrap mt-4 ">
+                                    <p>We are legend Lorem ipsum dolor sitmet, nsecte ipisicing eit, sed</p>
+                                </div>
+                                <div class="form-wrap ">
+                                    <form action="# ">
+                                        <input type="email " name="email " id="email " placeholder="Enter your Email">
+                                        <!-- <button type="submit "> -->
+                                        <i class="fa-brands fa-twitter-square me-3 "></i>
+                                        <!-- <i class="fa fa-send px-3 "></i>
+                                        <i class="fa-solid fa-2x fa-paper-plane-top px-3 "></i> -->
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="social-icon mt-3 ">
+                                    <a href="https://www.facebook.com/" target="_blank ">
+                                        <i class="fa-2x fa-brands fa-facebook-square me-3 "></i>
+                                    </a>
+                                    <a href="https://twitter.com/ " target="_blank ">
+                                        <i class="fa-2x fa-brands fa-twitter-square me-3 "></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/" target="_blank ">
+                                        <i class="fa-2x fa-brands fa-linkedin me-3 "></i>
+                                    </a>
+                                    <a href="https://vimeo.com/" target="_blank ">
+                                        <i class="fa-2x fa-brands fa-vimeo "></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="links mt-2 ">
+                                    <div class="title-link ">
+                                        <h2>Useful Links</h2>
+                                    </div>
+                                    <div class="link-wrap">
+                                        <ul class="mt-4">
+                                            <li>Pricing plane</li>
+                                            <li>popular deal</li>
+                                            <li>support</li>
+                                            <li>categories</li>
+                                            <li>FAQ</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="university-menu ">
+                                    <div class="title-uni mt-2">
+                                        <h2>University</h2>
+                                    </div>
+                                    <div class="uni-wrap">
+                                        <ul class="mt-4">
+                                            <li>Pricing plane</li>
+                                            <li>popular deal</li>
+                                            <li>support</li>
+                                            <li>categories</li>
+                                            <li>FAQ</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+    </footer>
+    <script src="/uniAlumini/assets/css/project.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

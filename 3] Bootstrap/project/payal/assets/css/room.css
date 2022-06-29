@@ -1,0 +1,83 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Dancing+Script&family=Exo+2:wght@100&family=Inspiration&family=Nunito+Sans:wght@200&display=swap');
+
+body{
+    background-color: #f4f4f4;
+    color: #111118;
+    line-height: 1.5;
+    font-family:'Dancing Script', cursive;
+
+}
+.nav-img
+{
+background-attachment: scroll;
+background: linear-gradient(rgba(213, 148, 230, 0.6), rgba(135, 158, 207, 0.6)),
+url(/Bootstrap/Project/assets/image/page-head-2.jpg) fixed center center;
+background-size: cover;
+height: 500px;
+width: 100%;
+font-family: 'Alfa Slab One', cursive;
+}
+
+.nav-img .navbar-toggler-icon{
+    background-color: white;
+}
+
+.nav-img .navbar-nav a{
+    color:white !important;
+    font-size: 20px;
+    }
+
+.room-details .text-block{
+    font-weight: 200;
+    font-size: 15px;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+.room-details .breadcrumb a{
+    text-decoration: none;
+    color: black;
+}
+
+.room-details .breadcrumb span{
+    opacity: 0.6;
+}
+
+.room-details .room-icon i{
+    border: 1px solid rgb(72, 77, 205);
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    color: black;
+
+}
+.room-details .row{
+    margin-left:20px ;
+    margin-right:20px ;
+}
+/* .footer .list-group-item{
+    background-color:black; 
+    color:white ; 
+    border: 2px solid rgb(210, 154, 236);
+} */
+
+
+/* @media screen and (max-width: 320px) {
+    .room-details .font-check{
+        font-size: 5px;
+    }
+    .room-details .room-icon i{
+        font-size: 5px;
+    }
+    .room-details h2{
+        font-size: 5px;
+    }
+} */
+
+
+
+
+ 
+  
+ 

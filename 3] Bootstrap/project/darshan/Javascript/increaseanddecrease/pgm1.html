@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .plus {
+            border-radius: 50%;
+            width: 20%;
+            height: 100px;
+            cursor: pointer;
+            background-color: blueviolet;
+            border: 5px solid brown;
+        }
+
+        #text {
+            width: 30%;
+            height: 100px;
+            text-align: center;
+            font-size: 50px;
+            border: 5px solid black;
+            background-color: aquamarine;
+        }
+
+        .plus:hover {
+            background-color: orchid;
+        }
+
+        .heading {
+            margin-left: 100px;
+        }
+        .main {
+            margin-left: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading" id="heading">onclick Increase and Decrease</h1>
+    <div class="main">
+        <button class="plus" onclick="increase()">+</button>
+        <!-- <input type="text" id="text"> -->
+        <div id="display"></div>
+        <button class="plus" onclick="decrase()">-</button>
+    </div>
+    <script>
+        // function increase() {
+        //     var a = document.getElementById("text");
+        //     a.value++;
+        // }
+        // function decrase() {
+        //     var b = document.getElementById("text");
+        //     b.value--;
+        // }
+
+        var a= 0;
+        document.getElementById("display").innerHTML=a;
+
+        function increase(){
+            a=a+1;
+            document.getElementById("display").innerHTML=a;
+        }
+        function decrase(){
+            a=a-1;
+            document.getElementById("display").innerHTML=a;
+        }
+
+    </script>
+</body>
+
+</html>

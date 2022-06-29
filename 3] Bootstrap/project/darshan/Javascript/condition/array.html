@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+
+    <script>
+        const bestFruits = ["apple", "banana", "mango", "orange", "Nuts"];
+
+        // convert array into string
+        document.getElementById("demo").innerHTML = bestFruits.toString();
+
+        // Join array value & make array as string
+        document.getElementById("demo1").innerHTML = (bestFruits.join("*"));
+
+        /**
+        * Access an array item by its index
+        */
+        document.getElementById("demo2").innerHTML =("sepecific item index -->", bestFruits[0] + "<br>");
+        document.getElementById("demo3").innerHTML = ("<br>" + "Total Elements -->", bestFruits.length + "<br>");
+        document.getElementById("demo4").innerHTML = ("<br>" + "last Elements index -->", [bestFruits.length - 1] + "<br>");
+        document.getElementById("demo5").innerHTML =("Last Element --> ", bestFruits[bestFruits.length - 1] + "<br>");
+        document.getElementById("demo6").innerHTML = ("Last Element -->", bestFruits[99] + "<br>");
+
+        /**
+        * Find the Index of an Item in an Array
+        */
+        document.getElementById("demo7").innerHTML =("sepecific item index -->", bestFruits.indexOf("banana") + "<br>");
+
+        if (bestFruits.indexOf("banana") >= 0) {
+            document.write("orange is my favorite food");
+        } else {
+            document.write("No banana is not fav food");
+        }
+
+        document.getElementById("demo8").innerHTML =("<br>" + "check banana -->", bestFruits.includes('banana') + "<br>");
+
+        if (bestFruits.includes('banana')) {
+            document.write("yes not fav");
+        } else {
+            document.write("No orange fav" + "<br>");
+        }
+        /**
+        * Append Values into Array - PUSH
+        */
+
+        bestFruits.push('Grips');
+        document.getElementById("demo8").innerHTML =("<br>" + "bestfruits -->", bestFruits + "<br>");
+        document.getElementById("demo10").innerHTML =("total elements --> ", bestFruits.length + "<br>")
+
+        /**
+         * Remove Last element from Array - POP
+         */
+
+        bestFruits.pop();
+        document.getElementById("demo10").innerHTML =("bestFruits -->", bestFruits + "<br>");
+
+        /**
+         * Remove multiple items from the end of an array - SPLICE
+         */
+        const BestFruits = ["apple", "banana", "mango", "orange", "Nuts"];
+
+
+        document.getElementById("demo11").innerHTML =("Remain Fruits -->", BestFruits.splice(2) + "<br>");
+        document.getElementById("demo12").innerHTML =("Remain Fruits -->", BestFruits.splice(-2) + "<br>");
+
+        /**
+         * Remove first item from an array - SHIFT
+         */
+        document.getElementById("demo13").innerHTML = ("fruits -->", BestFruits.shift());
+
+        /**
+         * Remove multiple items from the beginning - SPLICE
+         */
+        const startElement = 0;
+        const deleteCount = 2;
+        document.getElementById("demo14").innerHTML = ("fruits -->", BestFruits.splice(startElement, deleteCount))
+
+        /**
+         * Add a new first into Array - unShift
+         */
+
+        BestFruits.unshift("soya");
+        BestFruits.push("zoo");
+        document.getElementById("demo15").innerHTML = ("fruits :: PUSH ->", BestFruits.push("ladyfinger"));
+        document.getElementById("demo16").innerHTML = ("fruits -->", BestFruits)
+
+        document.getElementById("demo17").innerHTML = ("fruits :: UNSHIFT ->", BestFruits.unshift("maggi"));
+        document.getElementById("demo18").innerHTML = ("fruits -->", magoDB)
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 text-center mt-5">
+               <button class="btn btn-primary" onclick="pluseOne()">+</button>
+               <div id="output" class="py-2 border my-3">100</div>
+               <button class="btn btn-primary" onclick="minusOne()">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <form action=""></form>
+        </div>
+    </div>
+    <script>
+        // var a =10;
+        // console.log(a+20);
+        // console.log(true);
+        // console.table([1,2,3 ]);
+        // console.table({name:this ,mark:34});
+        // console.warn("this");
+        // console.clear();
+        //+ button click function increment 
+     //- button click function increment 
+     // output bind with output div
+
+     var data =0;
+
+//   var test = document.getElementById("output").innerHTML;
+//   console.log(test);
+  document.getElementById("output").innerText= data;
+ //document.write(data);
+
+ function pluseOne(){
+     data = data + 1;
+     document.getElementById("output").innerText = data;
+
+     // alert("add one");
+    // console.log(inText);
+ }
+ function minusOne(){
+     // alert("minus-1");
+     data = data - 1;
+     document.getElementById("output").innerHTML = data;
+    //  console.log(inHtml)
+
+ }
+
+
+    </script>
+    <h1 id="main">Yahoo <span>hhhhh</span>Baba</h1>
+</body>
+</html>

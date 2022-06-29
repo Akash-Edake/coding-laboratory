@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inspiration&family=Red+Hat+Mono:wght@300&family=Roboto+Slab:wght@500&display=swap"
+        rel="stylesheet">
+    <style>
+        .search-button {
+            transform: translate(165px, -23px);
+        }
+
+        .search-wrap {
+            border-radius: 27px;
+            width: 100%;
+        }
+    </style>
+     <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 100%;
+          height: 100%;
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+        <section class="top bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 mt-3">
+                        <div class="travel d-flex">
+                            <img src="assets/images/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-3 d-flex">
+                        <i class="fa-solid fa-phone mt-3 mb-3 icon-custom p-2 fa-1x"></i>
+                        <div class="phone flex-column d-flex ms-2 mt-3">
+                            <small class="number">24/7 Support number
+                            </small>
+                            <small class="num-1">1- 555 - 555 - 555</small>
+                        </div>
+                        <div class="form1 pt-4">
+                            <form action="#">
+                                <input type="search" name="search" id="search" placeholder="Search entire site here"
+                                    class="position-relative search-wrap">
+                            </form>
+                            <i class="fa-solid fa-magnifying-glass position-absolute search-button"></i>
+                        </div>
+                            <div class="ribbon">
+                                <nav>
+                                    <ul class="profile-nav pt-0">
+                                        <li class="active">
+                                            <a href="#" title="My Account">My Account</a>
+                                        </li>
+                                        <li style="display: none;"><a href="login.html" title="Login">Login</a></li>
+                                        <li style="display: none;"><a href="my_account.html" title="Settings">Settings</a></li>
+                                    </ul>
+                                    <ul class="lang-nav pt-0">
+                                        
+                                        <li class="active"><a href="#" title="English (US)">English (US)</a></li><li style="display: none;"><a href="#" title="English (UK)">English (UK)</a></li>
+                                        <li style="display: none;"><a href="#" title="Deutsch">Deutsch</a></li>
+                                        <li style="display: none;"><a href="#" title="Italiano">Italiano</a></li>
+                                        <li style="display: none;"><a href="#" title="Русский">Русский</a></li>
+                                    </ul>
+                                    <ul class="currency-nav pt-0">
+                                        <li class="active"><a href="#" title="$US Dollar">$US Dollar</a></li>
+                                        <li style="display: none;"><a href="#" title="€ Euro">€ Euro</a></li>
+                                        <li style="display: none;"><a href="#" title="£ Pound">£ Pound</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+    </section>
+    </header>
+    <!-- ..navbar -->
+    <main>
+        <section>
+            
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#5c2d4073">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-wrap">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <strong>HOTELS</strong>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Secondary Navigation</a></li>
+                                    <li><a class="dropdown-item" href="#">Example links</a></li>   
+                                </ul>
+                            </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">FLIGHTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">HOTELS+FLIGHTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SELFCATERING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CRUISES</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="#">CARRENTAL</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    LOCATION
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">SingleLocation</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="#">HOTDEALS</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="#">PAGES</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    BLOG
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Singlepost</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link" href="#">PURCHASE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- ...corousel -->
+<section>
+    <div class="container-fluid">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/carousel/slider1.jpg" class="d-block w-100" alt="">
+               
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/carousel/slider2.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/carousel/slider3.jpg" class="d-block w-100" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+</div>
+        </section>
+
+
+
+
+        <!-- <section>
+            <div class="container-fluid">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/carousel/slider1.jpg" alt="" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/carousel/slider2.jpg" alt="" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/carousel/slider3.jpg" alt="" class="d-block" style="width:100%">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>  -->
+            <!-- Explore our latest offers -->
+            <section>
+
+                <div class="container">
+                    <header class="title">
+                        <h2>Explore our latest offers</h2>
+                    </header>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card me-2">
+                                <img class="card-img-top" src="assets/images/offers/img1.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <p class="card-text">Winter beach escapes 30% off</p>
+                                    <a href="#" class="btn btn-primary">Explore our deals</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card me-2">
+                                <img class="card-img-top" src="assets/images/offers/img2.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <p class="card-text">Spend New Year‘s Eve in Paris</p>
+                                    <a href="#" class="btn btn-primary">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card me-2">
+                                <img class="card-img-top" src="assets/images/offers/img3.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <p class="card-text">Skiing weekends in the Alpes</p>
+                                    <a href="#" class="btn btn-primary">Explore our deals</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card me-2">
+                                <img class="card-img-top" src="assets/images/offers/img4.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <p class="card-text">Our weekly top offer: Thailand</p>
+                                    <a href="#" class="btn btn-primary">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+        
+        <!-- Top destinations around the world -->
+        <section>
+            <div class="container">
+                <header class="title">
+                    <h2>Top destinations around the world</h2>
+                </header>
+                <div class="row mb-5">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/destinations/img1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Paris</h5>
+                                        <p class="card-text">1529 Hotels</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <a href="#" class="btn btn-primary">View all</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex" style="background-color: gray;">
+                                        <div class="col-6 text-start d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-hotel"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$70</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-plane-up"></i></div>
+                                            <div class="col-6">
+
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$150</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/destinations/img2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Amsterdam</h5>
+                                        <p class="card-text">929 Hotels</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <a href="#" class="btn btn-primary">View all</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex" style="background-color: gray;">
+                                        <div class="col-6 text-start d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-hotel"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$70</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-plane-up"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$150</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/destinations/img3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="col-12 d-flex">
+                                    <div class="col-7">
+                                        <h5 class="card-title">St Petersburg </h5>
+                                        <p class="card-text"> 658 Hotels</p>
+                                    </div>
+                                    <div class="col-5 text-end">
+                                        <a href="#" class="btn btn-primary">View all</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex" style="background-color: gray;">
+                                        <div class="col-6 text-start d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-hotel"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$70</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-plane-up"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$150</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/destinations/img4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Prague </h5>
+                                        <p class="card-text">829 Hotels</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <a href="#" class="btn btn-primary">View all</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex" style="background-color: gray;">
+                                        <div class="col-6 text-start d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-hotel"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$70</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-plane-up"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$150</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/destinations/img5.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Prague </h5>
+                                        <p class="card-text">829 Hotels</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <a href="#" class="btn btn-primary">View all</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex" style="background-color: gray;">
+                                        <div class="col-6 text-start d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-hotel"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$70</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-plane-up"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$150</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/destinations/img6.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Paris</h5>
+                                        <p class="card-text">1529 Hotels</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <a href="#" class="btn btn-primary">View all</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex" style="background-color:yellow;">
+                                        <div class="col-6 text-start d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-hotel"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$70</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-plane-up"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$150</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/destinations/img7.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Amsterdam</h5>
+                                        <p class="card-text">929 Hotels</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <a href="#" class="btn btn-primary">View all</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex" style="background-color: gray;">
+                                        <div class="col-6 text-start d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-hotel"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$70</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-plane-up"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$150</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/destinations/img8.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="col-12 d-flex">
+                                    <div class="col-7">
+                                        <h5 class="card-title">St Petersburg </h5>
+                                        <p class="card-text">658 Hotels</p>
+                                    </div>
+                                    <div class="col-5 text-end">
+                                        <a href="#" class="btn btn-primary">View all</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex" style="background-color: gray;">
+                                        <div class="col-6 text-start d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-hotel"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$70</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-plane-up"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$150</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/destinations/img9.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="col-12 d-flex">
+                                    <div class="col-7">
+                                        <h5 class="card-title">St Petersburg</h5>
+                                        <p class="card-text">658 Hotels</p>
+                                    </div>
+                                    <div class="col-5 text-end">
+                                        <a href="#" class="btn btn-primary">View all</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex" style="background-color: gray;">
+                                        <div class="col-6 text-start d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-hotel"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$70</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-plane-up"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$150</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/destinations/img10.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Prague</h5>
+                                        <p class="card-text">829 Hotels</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <a href="#" class="btn btn-primary">View all</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex" style="background-color: gray;">
+                                        <div class="col-6 text-start d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-hotel"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$70</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-plane-up"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$150</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/destinations/img11.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Paris</h5>
+                                        <p class="card-text">1529 Hotels</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <a href="#" class="btn btn-primary">View all</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex" style="background-color: gray;">
+                                        <div class="col-6 text-start d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-hotel"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$70</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-plane-up"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$150</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/images/destinations/img12.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6">
+                                        <h5 class="card-title">Amsterdam</h5>
+                                        <p class="card-text">929 Hotels</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <a href="#" class="btn btn-primary">View all</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex" style="background-color: gray;">
+                                        <div class="col-6 text-start d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-hotel"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$70</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-end d-flex">
+                                            <div class="col-6"><i class="pt-3 fa-solid fa-plane-up"></i></div>
+                                            <div class="col-6">
+                                                <div><small>from</small></div>
+                                                <div>
+                                                    <small>$150</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!--Description  -->
+        <section>
+            <div class="container mb-5">
+                <div class="row mt-5">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Handpicked Hotels</h5>
+                                <hr>
+                                <p class="card-text">All Book Your Travel Hotels fulfil strict selection criteria. Each
+                                    hotel is chosen individually and inclusion cannot be bought.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Detailed Descriptions</h5>
+                                <hr>
+                                <p class="card-text">To give you an accurate impression of the hotel, we endeavor to
+                                    publish
+                                    transparent, balanced and precise hotel descriptions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Exclusive Knowledge</h5>
+                                <hr>
+                                <p class="card-text">We’ve done our research. Our scouts are always busy finding out
+                                    more
+                                    about our hotels, the surroundings and activities on offer nearby.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Passionate Service</h5>
+                                <hr>
+                                <p class="card-text">Book Your Travels’s team will cater to your special requests. We
+                                    offer
+                                    expert and passionate advice for finding the right hotel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Best Price Guarantee</h5>
+                                <hr>
+                                <p class="card-text">We offer the best hotels at the best prices. If you find the same
+                                    room
+                                    category on the same dates cheaper elsewhere, we will refund the difference.
+                                    Guaranteed,
+                                    and quickly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Secure Booking</h5>
+                                <hr>
+                                <p class="card-text">Book Your Travel reservation system is secure and your credit card
+                                    and
+                                    personal information is encrypted.We work to high standards and guarantee your
+                                    privacy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Benefits for Hoteliers</h5>
+                                <hr>
+                                <p class="card-text">We provide a cost-effective model, a network of over 5000 partners
+                                    and
+                                    a personalised account management service to help you optimise your revenue.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Any Questions?</h5>
+                                <hr>
+                                <p class="card-text">Call us on 1-555-555-555 for individual, tailored advice for your
+                                    perfect stay or send us a message with your hotel booking query.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="footer container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                    <h6>Book Your Travel</h6>
+                    <p><small> PennsylSUVia Ave. Washington, DC</small></p>
+                    <p><small>
+                        <em>P:</em>
+                        24/7 customer support: 1-555-555-5555
+                    </p></small>
+                    <p><small>
+                        <em>E:</em>
+                        booking@mail.com
+                    </p></small>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                    <h6>Customer Support</h6>
+                    <ul>
+                        <li>Faq</li>
+                        <li>How do I make a reservation?</li>
+                        <li>Payment Options</li>
+                        <li>Booking Tips</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                    <h6>Follow us</h6>
+                    <div class="social-media">
+                        <a href="#" class="px-1">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="px-1">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#" class="px-1">
+                        <i class="fa-solid fa-rss"></i>
+                    </a>
+                    <a href="#" class="px-1">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="px-1">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="px-1">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="px-1">
+                        <i class="fa-brands fa-pinterest-square"></i>
+                    </a>
+                    <a href="#" class="px-1">
+                        <i class="fa-brands fa-vimeo"></i>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                    <h6>Dont miss our Exclusive Offers</h6>
+                    <form id="newsletter" action="newsletter.php" method="post">
+							<input type="email" id="newsletter_signup" name="newsletter_signup" placeholder="Enter your email here">
+							<input type="submit" id="newsletter_submit" name="newsletter_submit" value="Signup" class="gradient-button">
+					</form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</html>

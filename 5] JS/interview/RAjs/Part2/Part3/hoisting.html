@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var a;                    //variable declaration
+        a = 10;                   //variable Initialization
+        var a = 10;               //variable declaration + Initialization
+
+        var a = 10;                            // hoisting variable work bellow format
+        document.write(a);                     /* var a;
+        var b = 20;                             var b;
+                                                a = 10;
+                                                document.write(a);
+                                                b =20; */
+       
+    //  1. A variable can be used before it has been declared
+    a = 10;                            // actual work       var a;
+    document.write(a);                                   // a = 10;
+    var a;                                               // document.write(a);
+
+    // 2. only variable declaration are hoisted to the top, not variable initialization
+    var a = 10;
+    document .write(a + "" + b);
+    // var b = 20;
+
+    // js actual work
+    var a;
+    var b;
+    a = 10;
+    document.write(a + "" + b);
+    // b = 20;                  
+
+//    1.
+    var a = 10;
+    // console.log(a);
+    console.log(a + "" + b)               // 10undefine
+    /* var a;
+    a = 10;
+    document.write(a);
+    */
+    var b = 20;
+    
+    var i = "Hello";
+    document.write(i + "<br>");
+    function show() {
+        document.write(i + "<br>");
+        var i = "Rupali";
+        
+    }
+    show();
+
+    </script>                        
+</body>
+</html>

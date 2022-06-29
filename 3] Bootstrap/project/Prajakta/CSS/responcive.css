@@ -1,0 +1,21 @@
+/* snall devices (landscape phone,320 and up) */
+@media (min-width: 320px){
+
+}
+/* snall devices (landscape phone,320 and up) */
+@media ( min-width:576px)
+{
+
+}
+/* medium device (tablets, 768px and up) */
+@media (min-width:768px)
+{
+}
+    /* large device (destop, 992 and up */
+    @media (min-width :992px){
+
+}
+/* x-lrge device (large destop, 1200 and up */
+@media (min-width :1200px){
+    
+}

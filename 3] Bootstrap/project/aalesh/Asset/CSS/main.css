@@ -1,0 +1,151 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+.tob-bar {
+    background-color: maroon;
+    color: white;
+}
+
+.tob-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.p {
+    height: 100%;
+}
+
+.social-media a {
+    border-right: 1px solid #fff;
+    padding: 18px 10px;
+}
+
+.nav-link fw-bold {
+    color: red;
+}
+
+.social-media a:nth-child(4) {
+    border-right: 0px;
+}
+
+.social-media a:first-child {
+    border-left: 1px solid white;
+}
+
+.hh {
+    color: #fff;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.price {
+    color: maroon;
+    font-weight: bold;
+}
+
+.btn-one {
+    color: white;
+    background-color: maroon;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    border: 0px;
+    font-weight: bold;
+    border-radius: 0px;
+
+}
+
+.btn-two {
+    color: black;
+    background-color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    border: 0px;
+    font-weight: bold;
+    border-radius: 0px;
+}
+
+.btn-one:hover {
+    background-color: black;
+}
+
+.btn-two:hover {
+    background-color: black;
+    color: white;
+}
+
+.img-menu {
+    background-image: url(../Images/border.png);
+    background-repeat: no-repeat;
+    height: 580px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 106px 55px 0 45px;
+}
+
+.img-size {
+    height: 60px;
+    width: 180px;
+}
+
+.foot-part {
+    color: #fff;
+}
+
+.btn-three {
+    color: #fff;
+    background-color: black;
+    border: 0px;
+    font-weight: bold;
+    border-radius: 0px;
+}
+
+.btn-three:hover {
+    background-color: maroon;
+}
+
+.abc {
+    background: url(../images/about.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    color: #fff;
+    height: 25rem;
+}
+
+.kpg {
+    padding: 10rem 0 9.375rem;
+}
+
+.kpg h1 {
+    font-size: 48px;
+}
+
+.kpg p {
+    font-size: 20px;
+}
+
+.img-food {
+    background: url(../images/img-food.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    color: #fff;
+    height: 25rem;
+}
+
+.kk {
+    text-align: center;
+
+}
+
+.kk a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-right{text-align: right;}

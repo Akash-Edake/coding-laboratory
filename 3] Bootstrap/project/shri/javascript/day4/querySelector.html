@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="para"> welcome query selector</p>
+    <p id="para1"> demo1</p>
+    <p>demo2</p>
+    <p>demo3</p>
+
+    <p id="para3">Welcome Javascript</p>
+
+    <script>
+        var a = document.querySelector("#para").innerText; // returns only 1st matching element 
+        console.log(a);
+
+        var b = document.querySelectorAll("p"); //return nodelist object in console
+        console.log(b);
+
+        b[0].innerHTML = "Demo";
+        b[0].style.color = "blue";
+        b[3].style.color = "red";
+        b[1].innerHTML = "welcome"; //accessing nodes using index
+
+        // var c = document.getElementById("para3");
+        // c.setAttribute("style", "color:red;");
+        document.getElementById("para3").style = "color:red; backgroundColor=blue;";
+        document.getElementById("para1").style.cssText = "display: block; position: absolute; color:blue;"
+            //Accidental/undefined variable
+
+        function test() {
+            a = [1, 2, 3]
+        }
+        test();
+        console.log(a);
+    </script>
+</body>
+
+</html>

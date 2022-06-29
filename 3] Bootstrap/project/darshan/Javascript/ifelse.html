@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<input type="text" id="value">
+<button onclick="f1()">ok</button>
+
+<body>
+    <script>
+        function f1() {
+            var a= document.getElementById("value").value;
+
+            if (a >= 80 && a <= 100) {
+                document.write("Outstanding");
+            }
+            else if (a >= 60 && a <= 79) {
+                document.write("Good");
+            }
+            else if (a >= 40 && a <= 59) {
+                document.write("Below average");
+            }
+            else if (a < 40) {
+                document.write("needs improvement");
+            } else {
+                document.write("please Entre valid number")
+            }
+        }
+    </script>
+</body>
+
+</html>

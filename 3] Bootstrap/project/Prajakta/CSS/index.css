@@ -1,0 +1,337 @@
+
+#menu{
+    font-size: smaller;
+}
+
+#menu li{
+    display: inline-block;
+}
+
+#menu li a{
+display: block;
+}
+.tital{
+    font-size: 45px;
+}
+.mean{
+    font-size: 100px;
+    font-weight: 100;
+    
+}
+.end{
+    font-size:60px ;
+}
+.head{
+padding-bottom: 25%;
+text-align: left;
+padding: auto;
+    
+}
+.help{
+    font-size: 90px;
+    font-weight: 100;
+}
+.save{
+    font-size: 70px;
+    font-weight: 100px; ;
+    color: black;
+}
+.world{
+    font-size: 60px;
+    font-weight: 150px;
+    color: black;
+}
+.place{
+    text-align: center;
+    font-weight: 100;
+    font-size: 50px;
+    text-shadow: 05cm;
+}
+.social-site a {
+    color: white;
+    text-decoration: none;
+    font-size: smaller;
+}
+.first-bar{
+    background-color: black;
+}
+.contact a {
+    text-decoration: none;
+    color: white;
+    font-size: smaller;
+}
+.slide{
+    width: 100;
+    /* height: 500px; */
+}
+.service-box{
+    text-align: center;
+    color: white;  
+    font-size: smaller;
+}
+.service-box a{
+    text-decoration: none;
+    color: white;
+}
+.box{
+    background-color: #2d2418;
+    border-top: 5px solid;
+}
+.h6{
+    background-color: rgb(63,50,33);
+}
+.contain-box{
+    background-color: black;
+    color: white;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    
+    
+}
+.h4{
+    margin-left: 10%;
+}
+.donation{
+    color: #facc2e;
+    margin-left: 10%;
+}
+.donate{
+    background-color: #f5c114;
+    margin-left: 10%;
+    margin-bottom: 6%;
+    border-radius: px;
+
+}
+.action{
+color: #5dc269;
+margin-left: 10%;
+}
+.act-now{
+    background-color: #5dc269; 
+    color: white;
+    margin-left: 10%;
+    margin-bottom: 6%;
+    border-radius: 4px;
+
+}
+.para{
+    margin-left: 10%;
+}
+.section4{
+    background:url(../image/donation-bg.jpg) no-repeat;
+    background-size: cover;
+
+}
+.box1{
+    background: url(../image/save-earth.jpg) no-repeat;
+    background-size: cover;
+}
+
+.box2{
+    background: url(../image/wind-energy.jpg) no-repeat;
+    background-size: cover;
+}
+.grreen-nature{
+    margin-top: 5%;
+}
+.itom-tital-link a{
+    text-decoration: none;
+}
+
+.itom-tital-link{
+    margin-top: 3.5%;
+}
+.sub-head{
+    font-size: medium;
+    color: rgb(130, 173, 130);
+}
+.second-head{
+    font-size: smaller;
+}
+.card-text{
+    font-size: smaller;
+}
+.list-with-icon-image{
+    padding-top: 10%;
+    margin-left: 15%;
+}
+.list-with-title{
+    font-size:medium;
+    color: #5dc269;   
+}
+.list-with-icon-image{
+    /* margin-left: 55%; */
+    margin-top: 12%;
+
+}
+.list-with-text{
+    font-size: small;
+    color: #8e8b8b;
+}
+.list-with-icon-content{
+    background-color: #f6efef;
+}
+.date{
+    font-size: xx-large;
+    font-weight: 500;
+    text-align: left;
+    
+}
+.month{
+    font-size: medium;
+    font-weight: bold;
+    text-align: left;
+    
+}
+.sub-head{
+    font-size: medium;
+    text-align: left;
+    color: #5dc269;
+}
+.news{
+    color: #5dc269;
+    padding-top: 2%;
+}
+.tital-wrapper{
+    background: url(../image/news-letter.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.newsletter-email{
+    text-align: center;
+    margin-top: 30px;
+    padding: 1% 15% 1% 0%;
+
+}
+.sub-form{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.newsletter-submit-button{
+    background-color: #5dc269;
+    color: white;
+    padding:1% 1.5% 1% 1.5% ;
+    border-radius: 4px;
+}
+.newsletter-head{
+    color: #facc2e;
+}
+.carousal-itom a{
+    text-decoration: none;
+    color: white;
+}
+.carousal-itom{
+    text-align: center;
+    color: white;
+    margin-bottom: 10%;
+}
+.about-twiter{
+    background-color: #2d2418;
+}
+.twiter-icon{
+    margin-top: 10%;
+}
+.card-text-next{
+   font-size: xx-large;
+    font-weight:bolder;
+    color: #5dc269;
+}
+.card-menu{
+    font-size: smaller;
+}
+.card-layout{
+    margin-top: 15%;
+}
+.img{
+    margin-left: 5%;
+    padding-top: 2%;
+    padding-left: 5%;
+}
+.act{
+text-align: center;
+margin-top: 3%;  
+color: #f6efef;  
+}
+.sub-act{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 15%;
+    color: #f6efef; 
+}hr{ color: #f6efef;}
+.donet-now{
+    background-color: #f5c114;
+    color: #f6efef;
+    border-radius: 4px;
+    text-align: center;
+}
+.mid-button{ 
+    margin-left: 35%;  
+}
+.act-now{
+    background-color: #5dc269;
+    color: #f6efef;
+    border-radius: 4px;
+    text-align: end;
+}
+#nature{
+    background: url(../image/service-bg-2.jpg) no-repeat;
+    padding-top: 135px;
+    background-position-x: center;
+}
+.recent-post-widget-title a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #2d2418;
+    
+}
+.blog-info a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #2d2418;
+}
+.footer-wrapper{
+    background-color: #382f24;
+    position: relative;
+    background-repeat: no-repeat;
+}
+#para{
+    color: #f6efef;
+    font-size: small;
+    margin-top: 15%;
+
+}
+.call-us a{
+text-decoration: none;
+color: #f6efef;
+}
+.mobile a{
+    text-decoration: none;
+     color: #f6efef;
+}
+.our-email a{
+    text-decoration: none;
+     color: #f6efef;
+}
+.greennature-widget-title{
+    color: #f6efef;
+    font-size: medium;
+    padding-bottom: 7%;
+    margin-top: 3%;
+}
+.recent-post-widget-title a{
+    color: #f6efef;
+    text-decoration: none;
+}
+.tital-2{
+    padding-bottom: 20%;
+}
+.fa-solid{
+    color: #f6efef;
+    padding-right: 4px;
+}
+.copyright-wrapper a{
+    color: #f6efef;
+    text-decoration: none
+    
+}

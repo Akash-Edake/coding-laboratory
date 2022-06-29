@@ -1,0 +1,69 @@
+<!-- JavaScript Events:When JavaScript is used in HTML pages, JavaScript can “react” on these events. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <div class="container">
+        <!-- this -->
+        <h1 id="heading" class="yourhead rupali is">Welcome to home</h1>
+        <div id="myfirst" class="child red good" id="first">child1</div>
+        <div class="child">child2</div>
+        <div class="child">child3</div>
+        <div class="child">child4</div>
+        <form action="noen.heml" method="post"></form>
+        <a href="//codewithharry.com">Go to code with harry</a>
+        <br><br>
+        search this website:<input type="text" name="Hello" id="">
+        <input type="submit" id="btn" value="submit">
+        <button id="btn">submit form</button>
+    </div>
+    <div class="no">this is dummy div1</div>
+    <div class="no">this is dummy div2</div>
+    <div class="no">this is dummy div3</div>
+    <script>
+        console.log('we are at day 12');
+// let btn = document.getElementById('btn');
+// btn.addEventListener('click',func1);
+// btn.addEventListener('mousedown',func3);
+// btn.addEventListener('dblclick',func2);
+
+
+// function func1(e){                // single click on submit btn and give the o/p "thanks"
+//     console.log("thanks",e)       // click the left click on mouse
+//     e.preventDefault();
+// }
+
+// function func2(e){                // double click on submit btn and give the o/p "thanks its a double click"
+//     console.log("thanks its a double click",e)   // click the left click on mouse
+//     e.preventDefault();
+// }
+
+// function func3(e){                        // click the right click/ mouse wheel down/ push down the arow 
+//     console.log("thanks its a mouse down",e)   
+//     e.preventDefault();
+// }
+
+// document.querySelector('.no').addEventListener('mouseenter',function(){     // mouse courser on button
+//     console.log('You enter no')
+// });
+
+// document.querySelector('.no').addEventListener('mouseleave',function(){    // mouse courser outside the button
+//     console.log('You exited no')
+// });
+
+document.querySelector('.container').addEventListener('mousemove',function(){   // move mouse on screen
+    document.body.style.backgroundColor = 'red';
+    // document.body.style.backgroundColor = `rgb(${
+        // e.offsetx}, ${e.offsetx}, 54)`;
+    console.log('You triggered mouse move event')
+    
+});
+
+    </script>
+</body>
+</html>

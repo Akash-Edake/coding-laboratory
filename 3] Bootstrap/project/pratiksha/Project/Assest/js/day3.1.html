@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternory Operators</title>
+</head>
+
+<body>
+    <h1>Demonstration for ternary operator in javascript</h1>
+    <p>Let's check the the condition will be age > 16 which means you can drive if age <  16 it means you cannot drive
+    <p>Enter the age of the person to check they will be allowed to drive or not</p>
+    <input id="personAge" value="16" />
+    <button onclick="myFunction()"> Check the Drive or not</button>
+    <p id="sampleDemo"></p>
+    <script>
+        function myFunction(){
+            var currentAge=document.getElementById("personAge").value;
+            var canDrive =(currentAge > 16) ? 'yes-You can drive' : 'no-sorry you are not allowed to drive';
+            document.getElementById("sampleDemo").innerHTML = canDrive;
+
+        }
+    </script>
+</body>
+
+</html>
