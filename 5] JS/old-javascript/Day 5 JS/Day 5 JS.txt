@@ -1,0 +1,82 @@
+ JS Summary:
+ 
+Day 0 and 1:
+	Static vs Dynamic
+	Technologies 
+	JS
+	
+	Features of JS:
+	Limitintations
+	Node.js
+	syntax if JS
+	placement of JS ---> 
+	
+Day 1: 
+		Comments: single and multi line
+		variables : 
+		Set of rules:
+
+Day 2:		
+		Operators:
+		Arhtmatic: +, -,* , /, %
+		Comparision : =, <=, >=, 
+		Logical: &&, ||, !
+		Assignment: =, +=, -=, *=, /=,%=
+		Bitwise : &, |, !
+		Misc : typeof, Ternory operator.
+		
+Day 3:
+	Conditional and control statements:
+	If, else, while, do, while, switch, for, break, continue.
+	
+Day 4:
+	Functions: 
+	built in and derived 
+	events: 
+	
+
+Storage Options in JS:
+	Storage options are use to store data of user which can be used later.
+	3 options in JS 
+	
+	1. Cookies :
+		cookies are used to store the data at client side.
+		
+		syntax: document.cookie = "cookieName = cookieValue; expires: expireDate"
+		
+		Limitintations of cookies:
+		Less secure 
+		maximum limit 4kb.
+		per website 20 cookies can be stored.
+		allow plain data only
+		any one can disable the cookies
+		
+	2. Local storage: 
+		more secure 
+		can store maximum data.
+		no limitations per website.
+		simplar way to store the data i.e. sytax is very simple.
+		
+		
+		localStorage.setItem('key', 'value')
+		localStorage.getItem('key')
+		localStorage.removeItem('key')
+		localStorage.clear() // it will clear all the data from localStorage.
+		
+	3. Session Storage:
+	
+		more secure 
+		can store maximum data.
+		no limitations per website.
+		simplar way to store the data i.e. sytax is very simple.
+		
+		sessionStorage.setItem('key', 'value')
+		sessionStorage.getItem('key')
+		sessionStorage.removeItem('key')
+		sessionStorage.clear() // it will clear all the data from sessionStorage.
+		
+		Only dirfference bet sessionStorage and localStorage is that 
+		when we close the browser sessionStorage will get removed 
+		but when will close the browser localStorage data is not going to remove fromt the storage.
+		
+		

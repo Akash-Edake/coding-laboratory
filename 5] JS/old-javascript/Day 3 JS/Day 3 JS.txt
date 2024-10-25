@@ -1,0 +1,90 @@
+ 
+Conditional Statements in JS:
+
+	Used to make the decision
+	we have :
+	
+	If 
+	If else
+	nested if else
+	switch
+	while
+	do... while
+	for 
+	for ... in 
+	break 
+	continue
+	
+1. If :
+	 if( condition){
+	 block of code
+	 }
+2  If .. else
+		if(condition){
+		block of code 
+		}
+		else{
+		block of code
+		}
+		
+3. Nested if else:
+	if(condition){
+		block of code 
+		}
+	else if(condition){
+		block of code
+		}
+	else if (condition){
+	block of code
+	}
+	...
+	....
+	....
+	....
+	else{
+	blovk of code 
+	}
+	
+4. Switch:
+
+	switch(expression){
+	
+	case 0:
+	stattement;
+	break;
+	
+	case 1:
+	stattement;
+	break;
+	
+	case 2:
+	stattement;
+	break;
+	
+	...
+	....
+	...
+	
+	default:
+	stattement;
+	break;
+	
+	}
+	
+	
+5. While Loop :
+Used to excetue the condition for mulitple block of code with incremwent or decrement.
+	
+	while(condition){
+	block of code 
+	// increment or decrement
+	}
+	
+6. do .. while:
+	do while will be execute at any cost for first time then depending on condition code will be executed.
+	
+7. for loop:
+
+	for(initilization; condition; increment/decrement){
+		block of code
+	}

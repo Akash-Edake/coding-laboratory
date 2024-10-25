@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showAlert(){
+            
+            alert('Are you sure you want to continue');
+            console.log('Hello alert is called');
+        }
+
+        function showConfirm(){
+            
+            var conRes= confirm('Are you sure you want to continue');
+            console.log(conRes);
+            if(conRes==true){
+                console.log('U have entered in true loop')
+            }
+            else{
+                console.log('U have entered in false loop');
+            }
+        }
+        function showPrompt(){
+            var promRes= prompt('Please enter your age');
+            console.log(promRes);
+            if(promRes > 18){
+                console.log('You are allowed to enter');
+            }
+            else{
+                console.log('You are not allowed to enter');
+            }
+        }
+    </script>
+</head>
+<body>
+    <H4> Dialog Boxes</H4>
+
+    <button onclick="showAlert()">Alert</button> 
+
+    <br><br>
+
+    <button onclick="showConfirm()">Confirm</button> 
+
+    <br><br>
+
+    <button onclick="showPrompt()">Prompt</button>
+</body>
+</html>

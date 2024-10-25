@@ -1,0 +1,65 @@
+
+Web Application:
+1. Overall structure of web application
+2. Static and Dynamic web application.
+3. Demanding Technologies
+4. JavaScript:
+
+	What is JS:
+	It is client side scripting language which is mainly deal with events from user as well as graphical interface.
+	It is an open source language. ==> Means u can contribute in that.
+	
+	How to run the JS:
+	store file with .js extension.
+	JS interprets the code in browser.
+
+	Features:
+		Lightweight 
+		Interpreted ---> Line by line execution.
+		netScape ---> LiveScript ---> JavaScript : ECMA Script: ES 1 ===> ES6/ES2015.
+		Used to create static as well as dynamic web application.
+		can insert HTML dyamically.
+		Handle operaytions with events
+		open source and cross platform.==> can work on any OS.
+		Less server side interaction  ==> Maximum things will be handled at UI.
+		Faster and immediate feedback.
+		increase productivity or interactivity.
+		Supported by all the browsers ==> chrome, firefox, IE, opera. Safari.
+		JS gives engine to all browsers on which JS code will be executed. e.g for google chrome JS gives V8 engine.
+		
+	Limitations :
+		can not perform multithreading ---> can not perform multiple operations at a time.
+		can not used for network application.
+		can not read or write files.
+		Less security. 
+		
+	Envoirnment setup for JS:
+	download and install node.js ==> It is an run time env used to run js scripts.
+	https://nodejs.org/en/
+	Once u download open the commond prompt and run below commond:
+	node -v
+	if this showing u version of node.js then we have installed it correctly.
+	
+	For ubantu:
+	just follow below instructions:
+	https://www.educative.io/edpresso/how-to-install-nodejs-on-ubuntu?aid=5082902844932096&utm_source=google&utm_medium=cpc&utm_campaign=edpresso-dynamic&utm_term=&utm_campaign=Dynamic+-+Edpresso&utm_source=adwords&utm_medium=ppc&hsa_acc=5451446008&hsa_cam=8092184362&hsa_grp=86276435689&hsa_ad=397226000870&hsa_src=g&hsa_tgt=aud-597782228546:dsa-837376625453&hsa_kw=&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjw7MGJBhD-ARIsAMZ0eeuVXdDkfuNJkEFsJIKWRllZ5sN_LKBlItAvwGZrm11WEEaDLwymdd0aAokzEALw_wcB
+	
+	Syntax of JS:
+	If we are wtiting our JS code inside html file then we need to write in the <script> tag.
+	<script></script>
+	1. Head section
+	2. Body section
+	3. Head and body Section
+	4. External JS file and which can import in html file.
+		
+	Task:
+	1. Downloand and install node.js
+	2. Create html file and embed js code in above three location like head, body and head n body.
+	3. create html file and embed js exteranlly
+	4. create js file and run using commond prompt
+	5. practice on commond prompt shortcuts.
+	
+	
+	
+	
+	

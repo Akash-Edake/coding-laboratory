@@ -1,0 +1,77 @@
+1. JS commnets:
+	Comments are going to give hint or more info to developer.
+	single line comment
+	multi line comments.
+
+2. Variables:
+	It can store the data.
+	It is used to excahnge the data.
+	there are two type of variavbles in JS 
+	Local variavbles and Global varibale.
+	Local variavbles: It allows to use in some specific block of code.
+	Global variavbles: It allows to use throught the program.
+	In JS we can create variavbles with the help of let, var, const, or direct variabel name.
+	
+	Set of Rules to create JS variavbles:
+	1. Keywords can not be used as variavbles.
+	2. can not start with number.
+	3. can start with '_';
+	4. Variables are case sensitive.
+	
+* IF we are using '+' with number then it will perfrorm addition. and if '+' is used with the string then it will concatinate the string.
+	
+3. Operators:
+	Used to perfomrs operations on operands or variavbles or values.
+	
+	1. Arthmatic
+	2. Comparision
+	3. Logical
+	4. Assignment
+	5. Condtional
+	6. Bitwise.
+	
+	
+	1. Arthmatic Operators:
+		Addition
+		Substraction
+		multiplication
+		Division
+		Modulus
+		Increment
+		Decrement
+		
+	
+	2. Comparision:
+		Equal to 
+		not equal to 
+		double equal to 
+		triple equal to 
+		less than
+		greater than 
+		less than or equal to 
+		greater than or equal to.
+		
+		* in == only value will be compoared and in === value as well as data type of that operands will be compoared.	
+		
+	3. Logical :
+		Logical and AND
+		logical OR
+		logical XOR
+		logical NOT
+	
+	4. Assignment:
+		simple assignment ==> =
+		add and assignment ==> +=
+		sub and assignment ==> -=
+		multiply and assignment ==> *=
+		devide and assignment ==>/=
+		modulus and assignment ==> %=
+		
+	5. Bitwise :
+		Bitwise AND
+		Bitwise OR
+		Bitwise XOR
+		
+	6. Misc:
+		TypeOf
+		Ternory operator

@@ -1,0 +1,72 @@
+Navigation from one screen to another screen in JS:
+
+If I want to navigate from one page to another depending on the business logic then I can navigate with the help of window.location.
+window.location ="url";
+
+
+
+Dialog Boxes:
+1. Alert
+2. Confirm
+3. Prompt
+
+
+Alert:
+Only one option i.e. Ok button.
+User doesn't have any other option.
+So it is usedd to show warning message.
+alert('Are u sure u can to continue')
+
+Confirm:
+Will have two options.
+Depending on the situation or business logic user can click on Ok or cancel then further action can be taken.
+confirm('Are u sure u can to continue');
+
+Prompt:
+In the prompt we can take the input from user.
+depending on user's input we can write our business logic.
+prompt('Please enter your age');
+
+
+Data Types :
+With the help of data types I can represnt data in differenct manner and I can impliment my business logic.
+
+1. Number
+2. Boolean
+3. Null
+4. Undefined
+5. String
+6. Object
+
+Primitive Data types : 
+	values will be stored directly in the memory.
+	Number, string, Boolean, Null, Undefined
+
+Non Primitive Data types :
+	values will be stored with the help of reference/ address.
+	Object
+
+
+1. Number:
+	var a = 15; 
+	var b= 15.5;
+	var c = 5+5;
+	We can have integer, float inside the number data types.
+	we can perform operations like typeOf, tostring, valueof on the number.
+	can handle the opration on numbers.: +-*/%
+	
+	Number Methods: typeOf, tostring, valueof, NaN
+	
+2. Boolean:
+	There will be two values i.e. true or false.
+	false: 0
+	true: 1
+	
+	Methods: typeOf, tostring, valueof.
+
+3. Undefined and Null :
+	Undefined means varaible is declared but value has not been assigned to that varaible. data type of undefined is undefined.
+	
+	Null is itself a value. data type of null is object.
+	
+	

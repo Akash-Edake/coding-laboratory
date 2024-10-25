@@ -1,0 +1,32 @@
+
+ JS Functions:
+Block of code to execute some operation.
+reusable code which can call at any point in  the program.
+code reusability
+allow program to devide into small samall fragments.
+There are two types of function
+until and unless u call any function, block of code inside function will not be executed.
+
+1. Built in function and 2. user defined function.
+
+1. User defined functions:
+function declation or function defination : Block of code will goes here
+function calling ===> function will be called with function name and parameter list
+arguments to the function ===> those are arguments or paramater to the function which can be used at the time of execution.
+return statement.==> Whatever result of function that needs to be return so that we can use that result anywhere in the program
+		no code will be executed after the return statement inside function defination.
+
+2. Built in functions or events:
+	-Functions or events provided by JS.
+	Events are used to handle the DOM elememts.
+	also used to communicate between html and JS code.
+
+DOM:
+	Dom is a document or platform which allows programs or 
+	scripts to dynamically access and update the content and style of web page.
+
+events: 
+	onclick, ondblclick, onsubmit, onchange, onselect, onload, oninput, onblur, onfocus,
+	onmouseover, onmouseup, onmousedown, onkeyup, onkeydown, onkeypress, 
+
+
